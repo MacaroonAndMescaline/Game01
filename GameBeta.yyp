@@ -215,6 +215,14 @@
             }
         },
         {
+            "Key": "79f32e38-bd13-4da2-89d2-7d80ee80b9eb",
+            "Value": {
+                "id": "e746faa0-48c3-442a-93aa-52d8a5e4946c",
+                "resourcePath": "sprites\\spr_interactable_trigger\\spr_interactable_trigger.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "82d017f2-b5a0-47de-bff2-7d95f1dba0f4",
             "Value": {
                 "id": "452b33c7-7712-474a-a4ab-66034d4a8d51",
@@ -372,6 +380,14 @@
                 "id": "d7f7d67d-f54e-4800-b20c-f1f26775823d",
                 "resourcePath": "views\\e2c425ab-560b-4887-a80a-82c4225e9403.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e6e91fe0-7b5b-4f86-b744-2641ab29965e",
+            "Value": {
+                "id": "0ba8b8ad-b7fb-4a7f-ad6d-edf372a311e2",
+                "resourcePath": "objects\\obj_interatable_trigger\\obj_interatable_trigger.yy",
+                "resourceType": "GMObject"
             }
         },
         {

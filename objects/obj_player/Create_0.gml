@@ -1,6 +1,5 @@
 /// @author John Tholen
-/// @description Insert description here
-// You can write your code in this editor
+/// @description creating basic needs for player object
 phy_fixed_rotation = true;
 
 //objects being picked up variables

@@ -6,7 +6,8 @@
     "children": [
         "ae36e770-9724-4465-a6b8-cffde7b4c83d",
         "c9c1b52b-94d0-43ef-93e1-28abe24ff8df",
-        "d07c3739-61e4-40bd-8370-a6b51e005d48"
+        "d07c3739-61e4-40bd-8370-a6b51e005d48",
+        "79f32e38-bd13-4da2-89d2-7d80ee80b9eb"
     ],
     "filterType": "GMSprite",
     "folderName": "interactable player object group",
