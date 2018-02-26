@@ -1,4 +1,5 @@
-/// @description Insert description here
+/// @author John Tholen
+/// @description Throwing and picking up objects
 // You can write your code in this editor
 
 //-----------------------------------------------------------------------
@@ -7,11 +8,11 @@
 if(picked_up_item) && (alarm[0] <0){
 	if(obj_direction_right)
 		with(instance_create_layer(x + phy_speed_x + 1 + obj_player.obj_width, y , "Player", held_object)){
-			physics_apply_force(x + obj_width/2, y + obj_height/2, obj_player.throw_speed, - obj_player.throw_speed/1.5);
+			physics_apply_force(x, y, obj_player.throw_speed, - obj_player.throw_speed/1.5);
 		}
 	else
 		with(instance_create_layer(x + phy_speed_x - held_width - 1, y, "Player", held_object)){
-			physics_apply_force(x + obj_width/2, y + obj_height/2, - obj_player.throw_speed, - obj_player.throw_speed/1.5);
+			physics_apply_force(x, y, - obj_player.throw_speed, - obj_player.throw_speed/1.5);
 		}
 	picked_up_item = false;
 	alarm[0] = 5;
