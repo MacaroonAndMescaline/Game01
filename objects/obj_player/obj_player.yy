@@ -240,6 +240,20 @@
             "value": "0",
             "varName": "xadd",
             "varType": 1
+        },
+        {
+            "id": "43f81984-bfe3-406c-b7f6-8b1a07c2209b",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "20",
+            "varName": "MAX_SPEED",
+            "varType": 1
         }
     ],
     "solid": false,

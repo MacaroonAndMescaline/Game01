@@ -11,4 +11,4 @@ held_width = 0;
 held_height = 0;
 
 //physics properties
-phy_linear_damping = 3;
+phy_linear_damping = 0.1;
