@@ -1,3 +1,4 @@
+/// @author John Tholen
 /// @description Creating physics for world
 physics_world_create(pixel_to_meters);
 physics_world_gravity(0, grav_y);

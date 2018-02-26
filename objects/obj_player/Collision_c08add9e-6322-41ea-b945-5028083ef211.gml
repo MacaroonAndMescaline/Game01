@@ -1,3 +1,4 @@
+/// @author John Tholen
 /// @description calculating angle for walking
 
 //Checking for slopped angle

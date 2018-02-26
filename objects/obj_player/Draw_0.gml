@@ -1,3 +1,4 @@
+/// @author John Tholen
 /// @description Insert description here
 draw_self();
 //if ball is picked up.
