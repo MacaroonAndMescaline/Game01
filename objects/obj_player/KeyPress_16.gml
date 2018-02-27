@@ -7,11 +7,11 @@
 //-----------------------------------------------------------------------
 if(picked_up_item) && (alarm[0] <0){
 	if(obj_direction_right)
-		with(instance_create_layer(x + phy_speed_x + 1 + obj_player.obj_width, y , "Player", held_object)){
+		with(instance_create_layer(x + phy_speed_x + 1 + obj_player.obj_width, y , "Ground", held_object)){
 			physics_apply_force(x, y, obj_player.throw_speed, - obj_player.throw_speed/1.5);
 		}
 	else
-		with(instance_create_layer(x + phy_speed_x - held_width - 1, y, "Player", held_object)){
+		with(instance_create_layer(x + phy_speed_x - held_width - 1, y, "Ground", held_object)){
 			physics_apply_force(x, y, - obj_player.throw_speed, - obj_player.throw_speed/1.5);
 		}
 	picked_up_item = false;
@@ -20,24 +20,24 @@ if(picked_up_item) && (alarm[0] <0){
 //-----------------------------------------------------------------------
 //Picking up and object -------------------------------------------------
 //-----------------------------------------------------------------------
-if(place_meeting(x,y,obj_interatable_trigger))
 if(!picked_up_item) && (alarm[0] < 0) {
-	if(place_meeting(x,y,obj_interatable_trigger)) {
-		for(var i = 0; i <instance_count; i++){
-			if(object_get_name(instance_id[i].object_index) == "obj_interatable_trigger") {
-				if(instance_id[i].colliding) {
-					held_name = object_get_name(instance_id[i].follow);
-					held_object = instance_id[i].follow.object_index;
-					held_sprite = held_object.sprite_index;
-					held_width = instance_id[i].follow.sprite_width;
-					held_height = instance_id[i].follow.sprite_height;
-					with(held_object) instance_destroy();
-					picked_up_item = true;
-					alarm[0] = 5;
-					break;
+	with(pickup_range){
+		if(place_meeting(x,y,obj_interactable_parent))
+			for(var i = 0; i <instance_count; i++){
+				if(object_get_parent(instance_id[i].object_index) == obj_interactable_parent) {
+					if(instance_id[i].colliding) {
+						follow.held_name = object_get_name(instance_id[i]);
+						follow.held_object = instance_id[i].object_index;
+						follow.held_sprite = instance_id[i].sprite_index;
+						follow.held_width = instance_id[i].sprite_width;
+						follow.held_height = instance_id[i].sprite_height;
+						follow.picked_up_item = true;
+						follow.alarm[0] = 5;
+						with(follow.held_object) instance_destroy();
+						break;
+					}
 				}
 			}
-		}
 	}
 }
 /*	held_name = object_get_name(other.object_index);

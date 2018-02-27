@@ -386,7 +386,7 @@
             "Key": "e6e91fe0-7b5b-4f86-b744-2641ab29965e",
             "Value": {
                 "id": "0ba8b8ad-b7fb-4a7f-ad6d-edf372a311e2",
-                "resourcePath": "objects\\obj_interatable_trigger\\obj_interatable_trigger.yy",
+                "resourcePath": "objects\\obj_interactable_trigger\\obj_interactable_trigger.yy",
                 "resourceType": "GMObject"
             }
         },

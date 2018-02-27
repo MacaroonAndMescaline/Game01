@@ -1,3 +1,3 @@
 /// @author John Tholen
-/// @description Insert description here
-instance_destroy(create);
+/// @description Not used anymore
+//instance_destroy(create);
