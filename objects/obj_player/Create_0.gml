@@ -10,7 +10,7 @@ held_width = 0;
 held_height = 0;
 
 //physics properties
-phy_linear_damping = 0.1;
+//phy_linear_damping = 0.1;
 alarm[0] = 0;
 
 //creating a pickup range for the interactables
@@ -21,3 +21,7 @@ with(pickup_range){
 	follow = other.id;
 }
 picked_up_item = false;
+
+//some basic shit
+obj_direction_right = true;
+grounded = false;

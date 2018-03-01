@@ -71,7 +71,7 @@
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
-    "physicsFriction": 0.2,
+    "physicsFriction": 50,
     "physicsGroup": 0,
     "physicsKinematic": true,
     "physicsLinearDamping": 0.1,
@@ -266,7 +266,7 @@
             "varType": 1
         }
     ],
-    "solid": false,
+    "solid": true,
     "spriteId": "b0e4a01a-833f-4d8c-9055-edf6117fb6f4",
     "visible": true
 }

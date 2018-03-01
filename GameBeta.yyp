@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "32d2fd98-941d-4c7f-bc40-30447cc418f6",
+            "Value": {
+                "id": "7379c007-3a09-41da-a17d-5a74cf0482d0",
+                "resourcePath": "scripts\\srpt_movement\\srpt_movement.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3441e3bb-3c6a-443e-91b0-e40c67a53715",
             "Value": {
                 "id": "f6e175bc-145f-461f-8532-b79b54b2b992",
@@ -408,7 +416,7 @@
         }
     ],
     "script_order": [
-        
+        "32d2fd98-941d-4c7f-bc40-30447cc418f6"
     ],
     "tutorial": ""
 }
