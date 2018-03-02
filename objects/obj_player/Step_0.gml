@@ -17,10 +17,6 @@ else if(xadd > 0)
 
 //moving
 
-//checking if player is grounded
-if (phy_linear_velocity_y == 0)grounded = true;
-else grounded = false;
-
 if(xadd != 0) {
 	srpt_movement();
 //	if(!place_meeting(x + xadd * obj_speed/2,y,obj_ground_parent)){
@@ -37,9 +33,11 @@ if(xadd != 0) {
 
 
 //jumping only while grounded
+//******NOT NEEDED*******
 
-
+/*
 if(keyboard_check(vk_space)) && (grounded){
 	physics_apply_force(x,y,0, -JUMP_SPEED);
 	grounded = false;
 } 
+*/
