@@ -33,7 +33,7 @@ if(!picked_up_item) && (alarm[0] < 0) {
 						follow.held_height = instance_id[i].sprite_height;
 						follow.picked_up_item = true;
 						follow.alarm[0] = 5;
-						with(follow.held_object) instance_destroy();
+						instance_destroy(instance_id[i]);
 						break;
 					}
 				}
