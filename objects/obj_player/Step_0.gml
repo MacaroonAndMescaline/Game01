@@ -4,33 +4,43 @@
 //Controls---------------------------------------------------------------
 //-----------------------------------------------------------------------
 
-
-
 //keyboard input
 
-xadd = keyboard_check(vk_right) + keyboard_check(ord("D")) - keyboard_check(vk_left) - keyboard_check(ord("A"));
+//moving and doing actions
+switch(keyboard_key) {
+	case global.ALT_CONTROL_LEFT:
+	case global.CONTROL_LEFT:
+		xadd = -1;
+		obj_direction_right = false;
+		srpt_movement();
+		break;
+	case global.ALT_CONTROL_RIGHT:
+	case global.CONTROL_RIGHT:
+		xadd = 1;
+		obj_direction_right = true;
+		srpt_movement();
+		break;
+	case global.ACTION:
+	case global.ALT_ACTION:
+		event_user(0);
+	default: 
+		xadd = 0;
+		break;	
+}
 
-if(xadd < 0)
-	obj_direction_right = false;
-else if(xadd > 0)
-	obj_direction_right = true;
 
-//moving
-
-if(xadd != 0) {
-	srpt_movement();
-//	if(!place_meeting(x + xadd * obj_speed/2,y,obj_ground_parent)){
-//		if(obj_speed > phy_speed_x) && (obj_direction_right) physics_apply_impulse(x, y, xadd/5, 0);
-//		else if (-obj_speed < phy_speed_x) &&(!obj_direction_right) physics_apply_impulse(x, y, xadd/5, 0);
-	}
-//Not needed right now, as phy_speed_x has no real bearing on not sticking to walls due to impulse.
-/*	phy_speed_x = xadd * obj_speed;
-	if (place_meeting(phy_position_x + phy_speed_x ,phy_position_y,obj_ground_parent)) {
-		phy_speed_x = 0;
-	}
-	*/
-//}
-
+//DEBUG PURPOSES ON FIGURING OUT THE LITERAL VALUE FOR KEYBOARD INPUT
+//GAME MAKER IS RETARDED AND DOESN'T USE THE NORMAL STANDARDS
+/*
+if(keyboard_check(vk_left))
+	show_debug_message("left = " + string(ord("A")))
+if(keyboard_check(vk_right))
+	show_debug_message("right = " + string(ord("D")))
+if(keyboard_check(vk_up))
+	show_debug_message("up = " + string(ord("W")))
+if(keyboard_check(vk_down))
+	show_debug_message("down = " + string(ord("S")))
+*/
 
 //jumping only while grounded
 //******NOT NEEDED*******

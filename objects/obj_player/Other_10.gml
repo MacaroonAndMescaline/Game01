@@ -1,6 +1,5 @@
 /// @author John Tholen
 /// @description Throwing and picking up objects
-// You can write your code in this editor
 
 //-----------------------------------------------------------------------
 //Throwing a held object ------------------------------------------------

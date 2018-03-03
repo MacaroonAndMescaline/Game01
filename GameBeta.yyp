@@ -295,6 +295,14 @@
             }
         },
         {
+            "Key": "a0334872-d02c-4320-8ff5-bfda7f4f4d00",
+            "Value": {
+                "id": "5c1b084d-e63c-4bea-8cfd-7c2e54fca97a",
+                "resourcePath": "datafiles_yy\\controls.ini.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "a3041dfe-b0d4-4c0e-9447-ac721ebc9200",
             "Value": {
                 "id": "6ce87915-1bc4-4be4-89ff-f90af780934b",
@@ -412,6 +420,14 @@
                 "id": "d7f7d67d-f54e-4800-b20c-f1f26775823d",
                 "resourcePath": "views\\e2c425ab-560b-4887-a80a-82c4225e9403.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e5c5af80-87a3-478a-a8c5-399c45704e29",
+            "Value": {
+                "id": "4d32f06b-233a-486c-a9dd-268373322caa",
+                "resourcePath": "objects\\obj_controlInit\\obj_controlInit.yy",
+                "resourceType": "GMObject"
             }
         },
         {
