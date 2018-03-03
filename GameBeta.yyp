@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "01af4d49-4999-47d6-9578-f2ba520370d5",
+            "Value": {
+                "id": "a0304c88-3c9c-4247-9963-432602708149",
+                "resourcePath": "sprites\\spr_arrow\\spr_arrow.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "08b3f7e8-f6f7-40ca-82b8-7d10b7771dba",
             "Value": {
                 "id": "762fdb52-88a8-4a51-9e39-41de0ce2e325",
@@ -196,6 +204,14 @@
                 "id": "5e486e16-6f61-49d3-8130-5c2842a4f7c8",
                 "resourcePath": "views\\5a605b4d-7efb-41e3-a2be-f562193b5d1e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5fd444e6-fa31-4f4f-9fce-18249abff259",
+            "Value": {
+                "id": "dfbf9978-be67-4b1b-a331-3e11a8d1e58f",
+                "resourcePath": "fonts\\fnt_main_menu\\fnt_main_menu.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -391,6 +407,14 @@
             }
         },
         {
+            "Key": "d2708b87-6708-45a5-a749-37f359cb3c31",
+            "Value": {
+                "id": "78fae4db-537a-4b40-88b9-14bf61da6917",
+                "resourcePath": "scripts\\srpt_main_menu\\srpt_main_menu.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d74af81e-1bab-48a7-be64-5c788c1a8478",
             "Value": {
                 "id": "adb18520-16bc-4d29-9715-dffffbf4373f",
@@ -458,7 +482,7 @@
             "Key": "f0553386-164c-42ed-93da-2ed454e9c5d0",
             "Value": {
                 "id": "e8ca6057-986f-4d1f-84f7-f5b3122c991f",
-                "resourcePath": "objects\\obj_splash\\obj_splash.yy",
+                "resourcePath": "objects\\obj_menu\\obj_menu.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -472,7 +496,8 @@
         }
     ],
     "script_order": [
-        "32d2fd98-941d-4c7f-bc40-30447cc418f6"
+        "32d2fd98-941d-4c7f-bc40-30447cc418f6",
+        "d2708b87-6708-45a5-a749-37f359cb3c31"
     ],
     "tutorial": ""
 }
