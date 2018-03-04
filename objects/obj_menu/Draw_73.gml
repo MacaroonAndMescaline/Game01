@@ -40,7 +40,7 @@ else if(whichMenu == "Controls"){
 	draw_text(x,y, string(controls[0]));
 	for( m = 1; m < array_length_1d(controls); m += 1)
 	{
-		draw_text(x, y +(m * space), string(controls[m]) + " <" + chr(buttons[m]) + "> ");
+		draw_text(x, y +(m * space), string(controls[m]) + " <" + srpt_key_to_string(buttons[m]) + "> ");
 	}
 }
 //waiting for input
