@@ -2,7 +2,7 @@
     "id": "e5c5af80-87a3-478a-a8c5-399c45704e29",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_controlInit",
+    "name": "obj_initialize",
     "eventList": [
         {
             "id": "24d87c6a-91df-4b57-809c-4cffa703b673",

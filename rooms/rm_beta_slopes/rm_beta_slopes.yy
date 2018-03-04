@@ -1,6 +1,6 @@
 
 {
-    "name": "room0",
+    "name": "rm_beta_slopes",
     "id": "942fefda-3cb3-4bd9-b0ba-5b2fdaef81e7",
     "creationCodeFile": "",
     "inheritCode": false,

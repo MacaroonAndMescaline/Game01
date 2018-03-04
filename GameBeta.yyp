@@ -306,15 +306,23 @@
             "Key": "942fefda-3cb3-4bd9-b0ba-5b2fdaef81e7",
             "Value": {
                 "id": "97d442c7-7758-4ff5-a17e-585f6e629535",
-                "resourcePath": "rooms\\room0\\room0.yy",
+                "resourcePath": "rooms\\rm_beta_slopes\\rm_beta_slopes.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "98c4bd37-9587-42c1-9e84-ac15c2f31859",
+            "Value": {
+                "id": "a13f9c9f-c5d1-42c6-90d1-3a2f2cd7aae8",
+                "resourcePath": "scripts\\srpt_change_controls\\srpt_change_controls.yy",
+                "resourceType": "GMScript"
             }
         },
         {
             "Key": "a0334872-d02c-4320-8ff5-bfda7f4f4d00",
             "Value": {
                 "id": "5c1b084d-e63c-4bea-8cfd-7c2e54fca97a",
-                "resourcePath": "datafiles_yy\\controls.ini.yy",
+                "resourcePath": "datafiles_yy\\settings\\controls.ini.yy",
                 "resourceType": "GMIncludedFile"
             }
         },
@@ -450,7 +458,7 @@
             "Key": "e5c5af80-87a3-478a-a8c5-399c45704e29",
             "Value": {
                 "id": "4d32f06b-233a-486c-a9dd-268373322caa",
-                "resourcePath": "objects\\obj_controlInit\\obj_controlInit.yy",
+                "resourcePath": "objects\\obj_initialize\\obj_initialize.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -493,11 +501,20 @@
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
             }
+        },
+        {
+            "Key": "f546b7b2-0893-4ea7-bf97-4ef7802bcbb0",
+            "Value": {
+                "id": "a302127a-f4db-4cd9-bda8-b5ebc261ea70",
+                "resourcePath": "views\\f546b7b2-0893-4ea7-bf97-4ef7802bcbb0.yy",
+                "resourceType": "GMFolder"
+            }
         }
     ],
     "script_order": [
         "32d2fd98-941d-4c7f-bc40-30447cc418f6",
-        "d2708b87-6708-45a5-a749-37f359cb3c31"
+        "d2708b87-6708-45a5-a749-37f359cb3c31",
+        "98c4bd37-9587-42c1-9e84-ac15c2f31859"
     ],
     "tutorial": ""
 }

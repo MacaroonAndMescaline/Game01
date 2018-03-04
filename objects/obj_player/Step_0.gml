@@ -21,12 +21,15 @@ switch(keyboard_key) {
 		srpt_movement();
 		break;
 	case global.ACTION:
-	case global.ALT_ACTION:
 		event_user(0);
 	default: 
+		show_debug_message("Button pressed = " + string(keyboard_key));
 		xadd = 0;
 		break;	
 }
+
+//escaping back to Main menu
+if(keyboard_check_pressed(global.ESCAPE)) room_goto(rm_splash);
 
 
 //DEBUG PURPOSES ON FIGURING OUT THE LITERAL VALUE FOR KEYBOARD INPUT
