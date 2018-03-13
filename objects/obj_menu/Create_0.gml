@@ -38,3 +38,4 @@ space = 64;
 mpos = 0;
 whichMenu = "Main"; // can change to "Options", "Beta", "Controls". "Waiting for input"
 keyToChange = 0;
+controlStickPressed = false;
