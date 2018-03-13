@@ -25,5 +25,3 @@ picked_up_item = false;
 //some basic shit
 obj_direction_right = true;
 grounded = false;
-
-//for shader outline
