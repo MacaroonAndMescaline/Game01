@@ -22,7 +22,6 @@
 	}
 	anglerem = 75; 
 	pathclear = 0; 
-	decre = 5;
 
 //-------------------------------------
 //Figuring out the angle for movement--
@@ -37,21 +36,21 @@
 			groundcheckxdown = x + lengthdir_x(obj_speed,anglesweepdown)
 			groundcheckydown = y + lengthdir_y(obj_speed,anglesweepdown)
 
-			if place_free(groundcheckxup,groundcheckyup) && !place_free(groundcheckxup,groundcheckyup+decre/2){
+			if place_free(groundcheckxup,groundcheckyup) && !place_free(groundcheckxup,groundcheckyup+3){
 				phy_position_y += lengthdir_y(obj_speed,anglesweepup);
 				phy_position_x += lengthdir_x(obj_speed,anglesweepup);
 				pathclear = 1;
 				break;
 			}
-			if place_free(groundcheckxdown,groundcheckydown) && !place_free(groundcheckxdown,groundcheckydown+decre/2){
+			if place_free(groundcheckxdown,groundcheckydown) && !place_free(groundcheckxdown,groundcheckydown+3){
 				phy_position_y += lengthdir_y(obj_speed,anglesweepdown);
 				phy_position_x += lengthdir_x(obj_speed,anglesweepdown);
 				pathclear = 1;
 				break;
 			}
-			anglesweepup += decre * xadd;
-			anglesweepdown = 0 ? 355 : anglesweepdown - decre * xadd;
-			anglerem -= decre;
+			anglesweepup += 5 * xadd;
+			anglesweepdown = 0 ? 355 : anglesweepdown - 5 * xadd;
+			anglerem -= 5;
 		}
 		if(!pathclear) phy_position_x += xadd *obj_speed;
 	} 
