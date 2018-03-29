@@ -36,3 +36,6 @@ global.STRING_OF_KEY[0] = pointer_null;
 
 //controller
 gamepad_set_axis_deadzone(0,0.7);
+
+//disable cursor on screen
+window_set_cursor(cr_none);

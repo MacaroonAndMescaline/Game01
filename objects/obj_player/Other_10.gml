@@ -39,11 +39,3 @@ if(!picked_up_item) && (alarm[0] < 0) {
 			}
 	}
 }
-/*	held_name = object_get_name(other.object_index);
-	held_object = other.object_index;
-	held_sprite = other.sprite_index;
-	held_width = other.sprite_width;
-	held_height = other.sprite_height;
-	with (other) instance_destroy();
-	picked_up_item = true; 
-} */
