@@ -60,7 +60,14 @@ else if(whichMenu = "Waiting for input") {
 			srpt_main_menu();
 	}
 }
-
+//resolution
+else if(whichMenu = "Resolution") {
+	if(move != 0) {
+		if(mpos > array_length_1d(res) - 1) mpos = 0;
+		if(mpos < 0) mpos = array_length_1d(res) - 1;
+	}
+		
+}
 //updating buttons for controls menu
 buttons[1] = global.CONTROL_UP;
 buttons[2] = global.CONTROL_DOWN;

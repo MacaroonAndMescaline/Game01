@@ -28,6 +28,13 @@ else if(whichMenu = "Options") {
 		case 1:
 			whichMenu = "Controls";
 			break;
+		case 2:
+			whichMenu = "Resolution";
+			mpos = 0;
+			break;
+		case 3:
+			srpt_toggle_fullscreen();
+			break;
 		default:
 			break;
 	}
@@ -93,6 +100,21 @@ else if(whichMenu == "Waiting for input") {
 			whichMenu = "Controls";
 			srpt_change_controls();
 			break;
+		default:
+			break;
+	}
+}
+//Resolution change
+else if(whichMenu == "Resolution") {
+	switch(mpos) {
+		case 0:
+			whichMenu = "Options";
+			break;
+		case 1:
+			srpt_change_res(1280, 720);
+			break;
+		case 2:
+			srpt_change_res(1920,1080);
 		default:
 			break;
 	}

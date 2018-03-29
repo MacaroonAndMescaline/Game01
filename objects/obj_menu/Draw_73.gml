@@ -72,6 +72,15 @@ else if(whichMenu == "Waiting for input") {
 		draw_text(x, y +(m * space), string(waiting[m]));
 	}		
 }
+else if(whichMenu == "Resolution") {
+	for( m = 0; m < array_length_1d(res); m++) {
+		if(mpos == m)
+			draw_set_color(c_yellow);
+		else 
+			draw_set_color(c_white);
+		draw_text(x,y +(m * space), string(res[m]));
+	}
+}
 //drawing cursor
 //if(whichMenu != "Waiting for input")
 //	draw_sprite(spr_arrow,0, x-20, y + mpos * space);

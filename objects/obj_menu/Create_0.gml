@@ -1,9 +1,17 @@
 /// @description MENU ITEMS
 /// @author John Tholen
 
+//Resolution setting
+res[0] = "-back-";
+res[1] = "1280 X 720";
+res[2] = "1920 X 1080";
+
+
 //Options MENU
 options[0] = "-back-";
 options[1] = "controls";
+options[2] = "resolution";
+options[3] = "toggle full screen";
 
 //controls menu
 controls[0] = "-back-";
