@@ -40,18 +40,18 @@
 			if place_free(groundcheckxup,groundcheckyup) && !place_free(groundcheckxup,groundcheckyup+decre/2){
 				phy_position_y += lengthdir_y(obj_speed,anglesweepup);
 				phy_position_x += lengthdir_x(obj_speed,anglesweepup);
-				//while(!place_free(phy_position_x,phy_position_y+1)) {
-				//	phy_position_y ++;
-				//}
+				while(place_free(phy_position_x,phy_position_y+1)) {
+					phy_position_y ++;
+				}
 				pathclear = 1;
 				break;
 			}
 			if place_free(groundcheckxdown,groundcheckydown) && !place_free(groundcheckxdown,groundcheckydown+decre/2){
 				phy_position_y += lengthdir_y(obj_speed,anglesweepdown);
 				phy_position_x += lengthdir_x(obj_speed,anglesweepdown);
-				//while(!place_free(phy_position_x,phy_position_y+1)) {
-				//	phy_position_y ++;
-				//}
+				while(place_free(phy_position_x,phy_position_y+1)) {
+					phy_position_y ++;
+				}
 				pathclear = 1;
 				break;
 			}
