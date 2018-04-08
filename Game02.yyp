@@ -255,6 +255,14 @@
             }
         },
         {
+            "Key": "745e36de-799a-4b31-9949-248e3636e0e9",
+            "Value": {
+                "id": "f494c5fe-2d91-406b-80f4-5c95b05207ee",
+                "resourcePath": "objects\\obj_master_physics\\obj_master_physics.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "76a241bd-bc56-4784-a633-1e81f162a42b",
             "Value": {
                 "id": "f8e66c5d-be6c-4d62-8a08-78841b36523a",
