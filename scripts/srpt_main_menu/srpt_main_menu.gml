@@ -48,6 +48,8 @@ else if(whichMenu == "Beta") {
 		case 1:
 			room_goto(rm_beta_slopes);
 			break;
+		case 2:
+			room_goto(rm_beta_vision);
 		default:
 			break;
 		

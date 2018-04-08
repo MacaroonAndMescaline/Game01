@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "026d9efb-462a-48d9-bd6e-79d7eeee4055",
+            "Value": {
+                "id": "52302c48-3f9e-4f09-a313-bcf0f00845f1",
+                "resourcePath": "rooms\\rm_master_physics\\rm_master_physics.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "08b3f7e8-f6f7-40ca-82b8-7d10b7771dba",
             "Value": {
                 "id": "762fdb52-88a8-4a51-9e39-41de0ce2e325",
@@ -76,6 +84,14 @@
                 "id": "9d7de6d2-ba0a-4010-9cb8-131f95a425cc",
                 "resourcePath": "objects\\obj_player_parent\\obj_player_parent.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "1416b643-0067-41fc-bc93-68c0975ef8b4",
+            "Value": {
+                "id": "a0646dd8-96a3-455d-b2b5-45db5fa223da",
+                "resourcePath": "rooms\\rm_beta_vision\\rm_beta_vision.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -388,6 +404,14 @@
                 "id": "9c5ff16b-b64b-4e93-8350-5a528d00e160",
                 "resourcePath": "sprites\\spr_player\\spr_player.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c090f483-3f7f-4227-b076-247a743828a3",
+            "Value": {
+                "id": "dc4b9d5e-3e3e-4546-9757-a03e9fe5d996",
+                "resourcePath": "views\\026d9efb-462a-48d9-bd6e-79d7eeee4055-room.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

@@ -37,6 +37,7 @@ menu[2] = "Quit";
 //beta room selection
 beta[0] = "-back-";
 beta[1] = "rm_beta_slopes";
+beta[2] = "rm_beta_vision";
 
 waiting[0] = "PLEASE PRESS ANY KEY";
 
