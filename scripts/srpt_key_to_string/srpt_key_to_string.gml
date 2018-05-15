@@ -53,6 +53,7 @@ switch( argument0 )
     case 123: return "F12";
     case 144: return "Num Lock";
     case 145: return "Scroll Lock";
+	case 162: return "CTRL";
     case 186: return ";";
     case 187: return "=";
     case 188: return ",";
@@ -65,3 +66,5 @@ switch( argument0 )
     case 221: return "]";
     case 222: return "'";
 }
+//only gets here if nothing was obtained from the list.
+return "ERROR";

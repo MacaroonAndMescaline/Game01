@@ -3,7 +3,7 @@
 ini_open("settings/controls.ini");
 
 //Main controls
-global.CONTROL_LEFT = ini_read_real("controls","left",0);
+global.CONTROL_LEFT = ini_read_real("controls","left",65);
 global.CONTROL_RIGHT= ini_read_real("controls","right",0);
 global.CONTROL_DOWN = ini_read_real("controls","down",0);
 global.CONTROL_UP= ini_read_real("controls","up",0);

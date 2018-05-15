@@ -97,13 +97,10 @@ else if(whichMenu == "Controls") {
 }
 //changing controls
 else if(whichMenu == "Waiting for input") {
-	switch(mpos) {
-		case 0:
+	if(alarm[0] < 0){
 			whichMenu = "Controls";
 			srpt_change_controls();
-			break;
-		default:
-			break;
+			mpos = 0;
 	}
 }
 //Resolution change
