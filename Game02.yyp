@@ -175,6 +175,14 @@
             }
         },
         {
+            "Key": "33c11227-c3e6-4baa-b22d-a6aa10e90f7d",
+            "Value": {
+                "id": "a0719cfd-e5a2-4ca7-bd64-16151c237fe8",
+                "resourcePath": "scripts\\srpt_key_change\\srpt_key_change.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3441e3bb-3c6a-443e-91b0-e40c67a53715",
             "Value": {
                 "id": "f6e175bc-145f-461f-8532-b79b54b2b992",
@@ -495,6 +503,14 @@
             }
         },
         {
+            "Key": "d473f97d-6450-4595-8c76-e520d2de3c9b",
+            "Value": {
+                "id": "fe105fda-b72c-4133-a9f9-919b8df1572f",
+                "resourcePath": "scripts\\srpt_key_obtain\\srpt_key_obtain.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d74af81e-1bab-48a7-be64-5c788c1a8478",
             "Value": {
                 "id": "adb18520-16bc-4d29-9715-dffffbf4373f",
@@ -596,6 +612,8 @@
         "d2708b87-6708-45a5-a749-37f359cb3c31",
         "98c4bd37-9587-42c1-9e84-ac15c2f31859",
         "cf13c331-ec5e-4561-93a3-05ebd0c9ae9f",
+        "d473f97d-6450-4595-8c76-e520d2de3c9b",
+        "33c11227-c3e6-4baa-b22d-a6aa10e90f7d",
         "3f813f53-1f55-4a0d-8500-bea1ced74fea",
         "3530dc90-e5ab-4941-a6fe-1e2a35cebf9c"
     ],

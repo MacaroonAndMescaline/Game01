@@ -59,6 +59,8 @@ else if(whichMenu == "Beta") {
 else if(whichMenu == "Controls") {
 	switch(mpos){
 		case 0:
+			alarm[0] = delay;
+		    mpos = 0;
 			whichMenu = "Options";
 			break;
 		case 1:
