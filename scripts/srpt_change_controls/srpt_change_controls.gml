@@ -40,6 +40,7 @@ if(!swap) {
 else if(swap){
 	ini_open("settings/controls.ini");
 	ini_write_real("controls",keyToChange,keyboard_key);
-	ini_write_real("controls",keySwap,swapBut)
+	ini_write_real("controls",keySwap,swapBut);
+	ini_close();
 }
 srpt_key_change();

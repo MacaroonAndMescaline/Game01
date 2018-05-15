@@ -59,20 +59,18 @@ else if(whichMenu == "Beta") {
 else if(whichMenu == "Controls") {
 	switch(mpos){
 		case 0:
-			alarm[0] = delay;
-		    mpos = 0;
 			whichMenu = "Options";
 			break;
 		case 1:
 			alarm[0] = delay;
-			keyToChange = "up";
 			mpos = 0;
+			keyToChange = "up";
 			whichMenu = "Waiting for input";
 			break;
 		case 2:
 			alarm[0] = delay;
-			keyToChange = "down";
 			mpos = 0;
+			keyToChange = "down";
 			whichMenu = "Waiting for input";
 			break;
 		case 3:
