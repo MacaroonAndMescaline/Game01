@@ -32,8 +32,6 @@ window_set_fullscreen(global.FULLSCREEN);
 ini_close();
 
 //initialize all button as numbers
-global.STRING_OF_KEY[0] = pointer_null;
-//global.STRING_OF_KEY[] = ;
 
 //controller
 gamepad_set_axis_deadzone(0,0.7);
