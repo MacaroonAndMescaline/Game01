@@ -1,5 +1,6 @@
 //Obtained from https://pastebin.com/H7UNwuBr
 //This will help in displaying the proper keys
+//THIS DOESN'T PROPERLY SHOW KEYS ANYMORE, SOMEONE WILL NEED TO FIX IT.
 if( argument0 > 48 && argument0 < 91 ) 
 { return chr(argument0); }
 switch( argument0 )
@@ -14,6 +15,7 @@ switch( argument0 )
     case 19: return "Pause/Break";
     case 20: return "CAPS";
     case 27: return "Esc";
+	case 32: return "Space";
     case 33: return "Page Up";
     case 34: return "Page Down";
     case 35: return "End";
@@ -53,7 +55,7 @@ switch( argument0 )
     case 123: return "F12";
     case 144: return "Num Lock";
     case 145: return "Scroll Lock";
-	case 162: return "CTRL";
+	case 162: return "LeftCRTL";
     case 186: return ";";
     case 187: return "=";
     case 188: return ",";

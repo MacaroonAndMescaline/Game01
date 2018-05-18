@@ -1,6 +1,6 @@
 /// @description MENU ITEMS
 /// @author John Tholen
-
+//These are the arrays that will be used when displaying the proper menu. 
 //Resolution setting
 res[0] = "-back-";
 res[1] = "1280 X 720";
@@ -20,13 +20,15 @@ controls[2] = "down";
 controls[3] = "left";
 controls[4] = "right";
 controls[5] = "action";
+controls[6] = "blink";
 
-//for button numbers
+//for button to be displayed on control change.
 buttons[1] = global.CONTROL_UP;
 buttons[2] = global.CONTROL_DOWN;
 buttons[3] = global.CONTROL_LEFT;
 buttons[4] = global.CONTROL_RIGHT;
 buttons[5] = global.ACTION;
+buttons[6] = global.BLINK;
 
 //Main menu
 menu[0] = "Start";

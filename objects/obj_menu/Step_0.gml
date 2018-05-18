@@ -74,3 +74,4 @@ buttons[2] = global.CONTROL_DOWN;
 buttons[3] = global.CONTROL_LEFT;
 buttons[4] = global.CONTROL_RIGHT;
 buttons[5] = global.ACTION;
+buttons[6] = global.BLINK;

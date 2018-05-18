@@ -1,7 +1,15 @@
+//-----------------------------------------------
+//Author: JOHN THOLEN----------------------------
+//This is the main menu script that runs the code
+//This code is called by obj_menu----------------
+//-----------------------------------------------
 
+//This delay is for adding a alarm to obj_menu for changing controls
+//It causes a one frame delay so that the enter button isn't accepted
+//Prevents unwanted buttons
 delay = 1;
-
-//main menu
+//-----------------------------------------------
+//main menu--------------------------------------
 if(whichMenu = "Main") {
 	switch(mpos) {
 		case 0:
@@ -18,7 +26,8 @@ if(whichMenu = "Main") {
 			break;
 	}
 }
-//options menu
+//-----------------------------------------------
+//options menu-----------------------------------
 else if(whichMenu = "Options") {
 	switch(mpos) {
 		case 0:
@@ -39,7 +48,8 @@ else if(whichMenu = "Options") {
 			break;
 	}
 }
-//beta level selection
+//-----------------------------------------------
+//beta level selection---------------------------
 else if(whichMenu == "Beta") {
 	switch(mpos) {
 		case 0:
@@ -55,7 +65,8 @@ else if(whichMenu == "Beta") {
 		
 	}
 }
-//controls
+//-----------------------------------------------
+//controls---------------------------------------
 else if(whichMenu == "Controls") {
 	switch(mpos){
 		case 0:
@@ -91,11 +102,17 @@ else if(whichMenu == "Controls") {
 			keyToChange = "action";
 			whichMenu = "Waiting for input";
 			break;
+		case 6:
+			alarm[0] = delay;
+			mpos = 0;
+			keyToChange = "blink"
+			whichMenu = "Waiting for input";
 		default:
 			break;
 	}
 }
-//changing controls
+//-----------------------------------------------
+//changing controls------------------------------
 else if(whichMenu == "Waiting for input") {
 	if(alarm[0] < 0){
 			whichMenu = "Controls";
@@ -103,7 +120,8 @@ else if(whichMenu == "Waiting for input") {
 			mpos = 0;
 	}
 }
-//Resolution change
+//-----------------------------------------------
+//Resolution change------------------------------
 else if(whichMenu == "Resolution") {
 	switch(mpos) {
 		case 0:

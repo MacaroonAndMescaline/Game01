@@ -10,6 +10,7 @@ global.CONTROL_UP= ini_read_real("controls","up",0);
 global.ACTION = ini_read_real("controls","action",0);
 global.CONFIRM = ini_read_real("controls","confirm",0);
 global.ESCAPE = ini_read_real("controls","escape",0);
+global.BLINK = ini_read_real("controls","blink",20);
 
 //Secondary Controls
 global.ALT_CONTROL_LEFT = ini_read_real("alternate controls","left",0);

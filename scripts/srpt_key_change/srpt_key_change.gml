@@ -1,4 +1,6 @@
-
+//Author: JOHN THOLEN
+//This changes the global variables associated for the actual controls the game looks for in the code.
+//called by srpt_change_controls
 //changes controls for game
 if(keyToChange == "up") {	
 	global.CONTROL_UP = keyboard_key;
@@ -18,6 +20,10 @@ if(keyToChange == "right") {
 
 if(keyToChange == "action") {	
 	global.ACTION = keyboard_key;
+}
+
+if(keyToChange == "blink") {
+	global.BLINK = keyboard_key;	
 }
 //only runs when swapping keys
 if(swap) {
@@ -39,5 +45,8 @@ if(swap) {
 
 	if(keySwap == "action") {	
 		global.ACTION = swapBut;
+	}
+	if(keySwap == "blink") {
+		global.BLINK = swapBut;
 	}
 }

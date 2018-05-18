@@ -28,6 +28,11 @@ if(keyboard_key == global.ACTION && keyToChange != "action") {
 	keySwap = "action"; 
 	swapBut = srpt_key_obtain();
 }
+if(keyboard_key == global.BLINK && keyToChange != "blink") {
+	swap = true;
+	keySwap = "blink";
+	swapBut = srpt_key_obtain();
+}
 //-------------------------------------------------------------
 //Normal key change if there is no need for swapping-----------
 //-------------------------------------------------------------
