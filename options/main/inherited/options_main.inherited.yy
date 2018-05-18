@@ -63,6 +63,38 @@
     "targets": 29263750006690030,
     "mipsToGenerate": 0,
     "border": 8
+}←7fa50043-cea6-4cd0-9521-a8ba8c6ea9f0|{
+    "audioGroups": {
+        "Additions": [
+            {
+                "Key": 1,
+                "Value": {
+                    "id": "090e21cc-cbbe-482c-9ebe-85708aa4cc06",
+                    "modelName": "GMAudioGroup",
+                    "mvc": "1.0",
+                    "groupName": "agSoundFX",
+                    "targets": 29263750006690030
+                }
+            },
+            {
+                "Key": 2,
+                "Value": {
+                    "id": "b431e87a-dbb5-4a51-94d9-8e075a78bbdf",
+                    "modelName": "GMAudioGroup",
+                    "mvc": "1.0",
+                    "groupName": "agMusic",
+                    "targets": 29263750006690030
+                }
+            }
+        ],
+        "Checksum": "濑Ⱥ朦씁ᬄ縈",
+        "Deletions": [
+            
+        ],
+        "Ordering": [
+            
+        ]
+    }
 }←7b2c4976-1e09-44e5-8256-c527145e03bb|{
     "targets": 29263750006690030
 }
