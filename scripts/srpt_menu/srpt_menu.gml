@@ -134,6 +134,7 @@ else if(whichMenu == "Controls") {
 else if(whichMenu == "Waiting for input") {
 	if(alarm[0] < 0){
 			srpt_change_controls();
+			whichMenu = "Controls";
 	}
 }
 //-----------------------------------------------
