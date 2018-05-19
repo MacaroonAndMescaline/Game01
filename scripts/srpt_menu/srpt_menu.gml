@@ -38,8 +38,9 @@ else if(whichMenu = "Options") {
 		case 0:
 			//whichMenu = "Main";
 			loaded = false;
-			instance_create_layer(x,y,"MenuLayer",obj_mainMenu);
 			instance_destroy();
+			instance_create_layer(x,y,"MenuLayer",global.RETURNMENU);
+			//instance_destroy();
 			break;
 		case 1:
 			//whichMenu = "Controls";
@@ -67,7 +68,7 @@ else if(whichMenu == "Beta") {
 		case 0:
 			//whichMenu = "Main";
 			loaded = false;
-			instance_create_layer(x,y,"MenuLayer",obj_mainMenu);
+			instance_create_layer(x,y,"MenuLayer",global.RETURNMENU);
 			instance_destroy();
 			break;
 		case 1:
@@ -156,4 +157,28 @@ else if(whichMenu == "Resolution") {
 		default:
 			break;
 	}
+}
+//-----------------------------------------------
+//Pause Menu-------------------------------------
+else if(whichMenu == "Pause") {
+	switch(mpos) {
+		case 0: 
+			loaded = false;
+			instance_activate_all();
+			gamePause = false;
+			instance_destroy();
+			break;
+		case 1:
+			loaded = false;
+			instance_create_layer(x,y,"MenuLayer",obj_options);
+			instance_destroy();
+			break;
+		case 2:
+			loaded = false;
+			instance_activate_all();
+			instance_destroy();
+			room_goto(rm_splash);
+			
+	}
+	
 }

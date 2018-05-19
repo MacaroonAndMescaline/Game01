@@ -11,3 +11,4 @@ menu[2] = "Quit";
 //other variables
 whichMenu = "Main";
 loaded = true;
+global.RETURNMENU = obj_mainMenu;

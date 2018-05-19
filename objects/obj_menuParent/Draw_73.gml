@@ -84,4 +84,14 @@ if(loaded) {
 			draw_text(x,y +(m * space), string(res[m]));
 		}
 	}
+	//Pause menu
+	else if(whichMenu == "Pause") {
+		for( m = 0; m < array_length_1d(pause); m++) {
+			if(mpos == m)
+				draw_set_color(c_yellow);
+			else 
+				draw_set_color(c_white);
+			draw_text(x,y +(m * space), string(pause[m]));
+		}
+	}
 }

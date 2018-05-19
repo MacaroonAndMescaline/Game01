@@ -22,7 +22,11 @@ else {
 }
 
 
-if(keyboard_check_pressed(global.ACTION) || gamepad_button_check_pressed(0,gp_face1)) event_user(0);
+if(keyboard_check_pressed(global.ACTION) || gamepad_button_check_pressed(0,gp_face1)) {
+	event_user(0);
+}
 
 //escaping back to main menu
-if(keyboard_check_pressed(global.ESCAPE)) room_goto(rm_splash);
+if(keyboard_check_pressed(global.ESCAPE)) { //room_goto(rm_splash);
+	instance_create_layer(x,y,"MenuLayer",obj_pause);
+}

@@ -67,6 +67,10 @@ else if(whichMenu = "Resolution") {
 	}
 		
 }
+else if(gamePause && keyboard_check_pressed(global.ESCAPE)) {
+		instance_activate_all();
+		instance_destroy();
+	}
 //updating buttons for controls menu
 buttons[1] = global.CONTROL_UP;
 buttons[2] = global.CONTROL_DOWN;

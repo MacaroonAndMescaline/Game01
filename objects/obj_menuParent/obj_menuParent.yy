@@ -121,6 +121,20 @@
             "value": "0",
             "varName": "loaded",
             "varType": 3
+        },
+        {
+            "id": "4d11c17a-1234-4f99-96a3-05b56b7f00e1",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "gamePause",
+            "varType": 3
         }
     ],
     "solid": false,
