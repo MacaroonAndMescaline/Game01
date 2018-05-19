@@ -72,7 +72,7 @@
                     "id": "090e21cc-cbbe-482c-9ebe-85708aa4cc06",
                     "modelName": "GMAudioGroup",
                     "mvc": "1.0",
-                    "groupName": "agSoundFX",
+                    "groupName": "ag_SoundFX",
                     "targets": 29263750006690030
                 }
             },
@@ -82,7 +82,7 @@
                     "id": "b431e87a-dbb5-4a51-94d9-8e075a78bbdf",
                     "modelName": "GMAudioGroup",
                     "mvc": "1.0",
-                    "groupName": "agMusic",
+                    "groupName": "ag_Music",
                     "targets": 29263750006690030
                 }
             }

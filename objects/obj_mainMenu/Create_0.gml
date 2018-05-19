@@ -45,8 +45,5 @@ waiting[0] = "PLEASE PRESS ANY KEY";
 
 
 //other variables
-space = 64;
-mpos = 0;
 whichMenu = "Main"; // can change to "Options", "Beta", "Controls". "Waiting for input"
-keyToChange = 0;
-controlStickPressed = false;
+loaded = true;

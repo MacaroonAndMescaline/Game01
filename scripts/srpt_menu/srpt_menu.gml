@@ -13,10 +13,15 @@ delay = 1;
 if(whichMenu = "Main") {
 	switch(mpos) {
 		case 0:
-			whichMenu = "Beta";
+			loaded = false;
+			instance_create_layer(x,y,"MenuLayer",obj_betaRooms);
+			instance_destroy();
 			break;
 		case 1:
-			whichMenu = "Options";
+			//whichMenu = "Options";
+			loaded = false;
+			instance_create_layer(x,y,"MenuLayer",obj_options);
+			instance_destroy();
 			mpos = 0;
 			break;
 		case 2:
@@ -31,15 +36,22 @@ if(whichMenu = "Main") {
 else if(whichMenu = "Options") {
 	switch(mpos) {
 		case 0:
-			whichMenu = "Main";
-			mpos = 1;
+			//whichMenu = "Main";
+			loaded = false;
+			instance_create_layer(x,y,"MenuLayer",obj_mainMenu);
+			instance_destroy();
 			break;
 		case 1:
-			whichMenu = "Controls";
+			//whichMenu = "Controls";
+			loaded = false;
+			instance_create_layer(x,y,"MenuLayer",obj_controls);
+			instance_destroy();
 			break;
 		case 2:
-			whichMenu = "Resolution";
-			mpos = 0;
+			//whichMenu = "Resolution";
+			loaded = false;
+			instance_create_layer(x,y,"MenuLayer",obj_resolution);
+			instance_destroy();
 			break;
 		case 3:
 			srpt_toggle_fullscreen();
@@ -53,7 +65,10 @@ else if(whichMenu = "Options") {
 else if(whichMenu == "Beta") {
 	switch(mpos) {
 		case 0:
-			whichMenu = "Main";
+			//whichMenu = "Main";
+			loaded = false;
+			instance_create_layer(x,y,"MenuLayer",obj_mainMenu);
+			instance_destroy();
 			break;
 		case 1:
 			room_goto(rm_beta_slopes);
@@ -70,7 +85,10 @@ else if(whichMenu == "Beta") {
 else if(whichMenu == "Controls") {
 	switch(mpos){
 		case 0:
-			whichMenu = "Options";
+			//whichMenu = "Options";
+			loaded = false;
+			instance_create_layer(x,y,"MenuLayer",obj_options);
+			instance_destroy();
 			break;
 		case 1:
 			alarm[0] = delay;
@@ -115,9 +133,7 @@ else if(whichMenu == "Controls") {
 //changing controls------------------------------
 else if(whichMenu == "Waiting for input") {
 	if(alarm[0] < 0){
-			whichMenu = "Controls";
 			srpt_change_controls();
-			mpos = 0;
 	}
 }
 //-----------------------------------------------
@@ -125,7 +141,10 @@ else if(whichMenu == "Waiting for input") {
 else if(whichMenu == "Resolution") {
 	switch(mpos) {
 		case 0:
-			whichMenu = "Options";
+			//whichMenu = "Options";
+			loaded = false;
+			instance_create_layer(x,y,"MenuLayer",obj_options);
+			instance_destroy();
 			break;
 		case 1:
 			srpt_change_res(1280, 720);

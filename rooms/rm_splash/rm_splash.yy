@@ -14,7 +14,7 @@
     "layers": [
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "Instances",
+            "name": "MenuLayer",
             "id": "1a4ae6be-f98b-4ddd-b090-6a0300111dd5",
             "depth": 0,
             "grid_x": 32,

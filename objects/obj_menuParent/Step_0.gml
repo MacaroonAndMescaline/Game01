@@ -2,8 +2,7 @@
 /// @author John Tholen
 
 var move = 0;
-
-//keyboard input
+//keyboad input
 if(keyboard_check_pressed(global.ALT_CONTROL_UP) 
 	|| keyboard_check_pressed(global.CONTROL_UP) 
 	|| gamepad_axis_value(0,gp_axislv) < 0
@@ -21,7 +20,7 @@ else if(keyboard_check_pressed(global.ALT_CONTROL_DOWN)
 else if(keyboard_check_pressed(global.ACTION)
         || keyboard_check_pressed(global.CONFIRM)
 		|| gamepad_button_check_pressed(0,gp_face1))
-	srpt_main_menu();
+	srpt_menu();
 else if(gamepad_axis_value(0,gp_axislv) == 0) controlStickPressed = false;
 
 //menu movement
@@ -57,7 +56,7 @@ else if(whichMenu = "Waiting for input") {
 	if(alarm[0] < 0) {
 		if(keyboard_key)
 			if(keyboard_check_pressed(keyboard_key))
-			srpt_main_menu();
+			srpt_menu();
 	}
 }
 //resolution
