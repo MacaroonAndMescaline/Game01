@@ -11,6 +11,7 @@ controls[6] = "blink";
 
 //waiting for input
 waiting[0] = "PLEASE PRESS ANY KEY";
+waiting[1] = "Press Enter/Escape to cancel";
 
 //for displaying buttons
 buttons[1] = global.CONTROL_UP;

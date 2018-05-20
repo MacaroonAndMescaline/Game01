@@ -17,9 +17,10 @@ else if(keyboard_check_pressed(global.ALT_CONTROL_DOWN)
 	move = 1;
 	controlStickPressed = true;
 }
-else if(keyboard_check_pressed(global.ACTION)
+else if((keyboard_check_pressed(global.ACTION)
         || keyboard_check_pressed(global.CONFIRM)
 		|| gamepad_button_check_pressed(0,gp_face1))
+		&& !(whichMenu = "Waiting for input"))
 	srpt_menu();
 else if(gamepad_axis_value(0,gp_axislv) == 0) controlStickPressed = false;
 
@@ -54,9 +55,14 @@ else if(whichMenu = "Controls") {
 //changing controls
 else if(whichMenu = "Waiting for input") {
 	if(alarm[0] < 0) {
-		if(keyboard_key)
-			if(keyboard_check_pressed(keyboard_key))
-			srpt_menu();
+		if(keyboard_key) {
+			if((!keyboard_check_pressed(global.ESCAPE)
+			&& !keyboard_check_pressed(global.CONFIRM))
+			&& keyboard_check_pressed(keyboard_key))
+				srpt_menu();
+			else if(keyboard_check_pressed(keyboard_key))
+				whichMenu = "Controls";
+		}
 	}
 }
 //resolution
