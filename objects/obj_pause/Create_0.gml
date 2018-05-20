@@ -6,3 +6,4 @@ gamePause = true;
 whichMenu = "Pause";
 global.RETURNMENU = obj_pause;
 instance_deactivate_all(true);
+physics_pause_enable(true);

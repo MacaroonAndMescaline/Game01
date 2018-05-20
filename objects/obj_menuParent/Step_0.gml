@@ -69,6 +69,7 @@ else if(whichMenu = "Resolution") {
 }
 else if(gamePause && keyboard_check_pressed(global.ESCAPE)) {
 		instance_activate_all();
+		physics_pause_enable(false);
 		instance_destroy();
 	}
 //updating buttons for controls menu

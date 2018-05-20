@@ -166,6 +166,7 @@ else if(whichMenu == "Pause") {
 			loaded = false;
 			instance_activate_all();
 			gamePause = false;
+			physics_pause_enable(false);
 			instance_destroy();
 			break;
 		case 1:
@@ -176,6 +177,7 @@ else if(whichMenu == "Pause") {
 		case 2:
 			loaded = false;
 			instance_activate_all();
+			physics_pause_enable(false);
 			instance_destroy();
 			room_goto(rm_splash);
 			
