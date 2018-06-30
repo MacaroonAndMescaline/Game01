@@ -1,6 +1,6 @@
 /// @description controls
 // You can write your code in this editor
-whichMenu = "menu";
+whichMenu = "Controls";
 menu[0] = "-back-";
 menu[1] = "up";
 menu[2] = "down";

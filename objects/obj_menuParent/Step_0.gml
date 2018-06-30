@@ -28,9 +28,21 @@ mpos += move;
 //-----------------------------------------------------------------------------------------
 //new cursor movement
 //-----------------------------------------------------------------------------------------
-if(move !=0) {
+if(move !=0) && !(whichMenu = "Waiting for input") {
 	if(mpos > array_length_1d(menu) - 1) mpos = 0;
 	if(mpos < 0) mpos = array_length_1d(menu) - 1;
+}
+else if(whichMenu = "Waiting for input") {
+	if(alarm[0] < 0) {
+		if(keyboard_key) {
+			if((!keyboard_check_pressed(global.ESCAPE)
+			&& !keyboard_check_pressed(global.CONFIRM))
+			&& keyboard_check_pressed(keyboard_key))
+				srpt_menu();
+			else if(keyboard_check_pressed(keyboard_key))
+				whichMenu = "Controls";
+		}
+	}
 }
 //-----------------------------------------------------------------------------------------
 //Not optimal code
