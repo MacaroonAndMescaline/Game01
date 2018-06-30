@@ -24,8 +24,19 @@ else if((keyboard_check_pressed(global.ACTION)
 	srpt_menu();
 else if(gamepad_axis_value(0,gp_axislv) == 0) controlStickPressed = false;
 
-//menu movement
 mpos += move;
+//-----------------------------------------------------------------------------------------
+//new cursor movement
+//-----------------------------------------------------------------------------------------
+if(move !=0) {
+	if(mpos > array_length_1d(menu) - 1) mpos = 0;
+	if(mpos < 0) mpos = array_length_1d(menu) - 1;
+}
+//-----------------------------------------------------------------------------------------
+//Not optimal code
+//-----------------------------------------------------------------------------------------
+/*
+//menu movement
 if(whichMenu = "Main") {
 	if(move !=0) {
 		if(mpos > array_length_1d(menu) - 1) mpos = 0;
@@ -78,6 +89,7 @@ else if(gamePause && keyboard_check_pressed(global.ESCAPE)) {
 		physics_pause_enable(false);
 		instance_destroy();
 	}
+*/
 //updating buttons for controls menu
 buttons[1] = global.CONTROL_UP;
 buttons[2] = global.CONTROL_DOWN;

@@ -1,13 +1,13 @@
-/// @description Controls
+/// @description controls
 // You can write your code in this editor
-whichMenu = "Controls";
-controls[0] = "-back-";
-controls[1] = "up";
-controls[2] = "down";
-controls[3] = "left";
-controls[4] = "right";
-controls[5] = "action";
-controls[6] = "blink";
+whichMenu = "menu";
+menu[0] = "-back-";
+menu[1] = "up";
+menu[2] = "down";
+menu[3] = "left";
+menu[4] = "right";
+menu[5] = "action";
+menu[6] = "blink";
 
 //waiting for input
 waiting[0] = "PLEASE PRESS ANY KEY";

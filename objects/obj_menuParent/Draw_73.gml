@@ -16,7 +16,20 @@ if(loaded) {
 	x = cx + cw /2;
 	y = cy + ch /2 - space * 2;
 	draw_set_color(c_white);
-
+//-----------------------------------------------------------------------------------------
+//New optimized code
+//-----------------------------------------------------------------------------------------
+for( m = 0; m < array_length_1d(menu); m += 1)
+	{
+		if(mpos == m)
+			draw_set_color(c_yellow);
+		else draw_set_color(c_white);
+		draw_text(x, y +(m * space), string(menu[m]));
+	}
+//-----------------------------------------------------------------------------------------
+//soon to be replaced
+//-----------------------------------------------------------------------------------------
+/*
 	//drawing main menu
 	if(whichMenu == "Main") {
 		for( m = 0; m < array_length_1d(menu); m += 1)
@@ -94,4 +107,5 @@ if(loaded) {
 			draw_text(x,y +(m * space), string(pause[m]));
 		}
 	}
+	*/
 }
