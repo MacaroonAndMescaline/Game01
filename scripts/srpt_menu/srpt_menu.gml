@@ -58,6 +58,7 @@ else if(whichMenu = "Options") {
 			srpt_toggle_fullscreen();
 			break;
 		case 4: //master volume
+			srpt_change_volume("master", barMove);
 			break;
 		case 5: //music volume
 			srpt_change_volume("music", barMove);

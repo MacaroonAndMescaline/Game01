@@ -41,6 +41,8 @@ window_set_cursor(cr_none);
 ini_open("settings/audio.ini");
 global.MUSIC_VOLUME = ini_read_real("audio","music",.8);
 global.SOUNDFX_VOLUME = ini_read_real("audio","soundfx",.8);
+global.MASTER_VOLUME = ini_read_real("audio","master",1);
 audio_group_set_gain(ag_Music, global.MUSIC_VOLUME,0);
 audio_group_set_gain(ag_SoundFX, global.SOUNDFX_VOLUME, 0);
+audio_master_gain(global.MASTER_VOLUME);
 ini_close();
