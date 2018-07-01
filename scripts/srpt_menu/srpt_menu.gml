@@ -12,19 +12,21 @@ delay = 1;
 //main menu--------------------------------------
 if(whichMenu = "Main") {
 	switch(mpos) {
-		case 0:
+		case 0: //Start
 			loaded = false;
 			instance_create_layer(x,y,"MenuLayer",obj_betaRooms);
 			instance_destroy();
 			break;
-		case 1:
+		case 1: //Load
+			break;
+		case 2:
 			//whichMenu = "Options";
 			loaded = false;
 			instance_create_layer(x,y,"MenuLayer",obj_options);
 			instance_destroy();
 			mpos = 0;
 			break;
-		case 2:
+		case 3:
 			game_end();
 			break;
 		default:

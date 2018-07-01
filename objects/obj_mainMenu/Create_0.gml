@@ -4,8 +4,9 @@
 
 //Main menu
 menu[0] = "Start";
-menu[1] = "Options";
-menu[2] = "Quit";
+menu[1] = "Load";
+menu[2] = "Options";
+menu[3] = "Quit";
 
 
 //other variables
