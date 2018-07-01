@@ -31,10 +31,16 @@ window_set_size(global.VIEW_PORT_X,global.VIEW_PORT_Y);
 window_set_fullscreen(global.FULLSCREEN);
 ini_close();
 
-//initialize all button as numbers
-
 //controller
 gamepad_set_axis_deadzone(0,0.7);
 
 //disable cursor on screen
 window_set_cursor(cr_none);
+
+//figure out audio settings
+ini_open("settings/audio.ini");
+global.MUSIC_VOLUME = ini_read_real("audio","music",.8);
+global.SOUNDFX_VOLUME = ini_read_real("audio","soundfx",.8);
+audio_group_set_gain(ag_Music, global.MUSIC_VOLUME,0);
+audio_group_set_gain(ag_SoundFX, global.SOUNDFX_VOLUME, 0);
+ini_close();

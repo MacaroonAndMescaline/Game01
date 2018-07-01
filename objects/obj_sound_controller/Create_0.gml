@@ -7,8 +7,8 @@ music_playing = snd_TestMusic;
 music_list = [snd_TestMusic];
 sfx = [snd_TestFX];
 
-music_volume = global.MUSIC;
-sfx_volume = global.SFX;
+//music_volume = global.MUSIC;
+//sfx_volume = global.SFX;
 
 control = false;
 music_target = 0;

@@ -343,6 +343,14 @@
             }
         },
         {
+            "Key": "80d674f3-bd52-4440-bb21-11f4b7ea06e2",
+            "Value": {
+                "id": "17299f80-bf36-4012-8a69-dc89946a30ab",
+                "resourcePath": "scripts\\srpt_change_volume\\srpt_change_volume.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "82d017f2-b5a0-47de-bff2-7d95f1dba0f4",
             "Value": {
                 "id": "452b33c7-7712-474a-a4ab-66034d4a8d51",
@@ -388,6 +396,14 @@
                 "id": "97d442c7-7758-4ff5-a17e-585f6e629535",
                 "resourcePath": "rooms\\rm_beta_slopes\\rm_beta_slopes.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "95b0ade1-60c0-491a-b7dd-08b594a7f23f",
+            "Value": {
+                "id": "65305b5c-70a2-4300-9e93-f0d3c3503138",
+                "resourcePath": "sprites\\spr_slider_icon\\spr_slider_icon.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -444,6 +460,14 @@
                 "id": "a7297bdf-9f99-40c9-afef-2dff98014b22",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "ac271848-1f02-4dd3-9f2d-26e14038914f",
+            "Value": {
+                "id": "94ba663d-c59d-4810-9111-4ce2216783ca",
+                "resourcePath": "sprites\\spr_slider_bar\\spr_slider_bar.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -695,7 +719,8 @@
         "d473f97d-6450-4595-8c76-e520d2de3c9b",
         "33c11227-c3e6-4baa-b22d-a6aa10e90f7d",
         "3f813f53-1f55-4a0d-8500-bea1ced74fea",
-        "3530dc90-e5ab-4941-a6fe-1e2a35cebf9c"
+        "3530dc90-e5ab-4941-a6fe-1e2a35cebf9c",
+        "80d674f3-bd52-4440-bb21-11f4b7ea06e2"
     ],
     "tutorial": ""
 }

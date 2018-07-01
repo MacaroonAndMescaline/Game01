@@ -2,6 +2,7 @@
 /// @author John Tholen
 
 var move = 0;
+barMove = 0;
 //keyboad input
 if(keyboard_check_pressed(global.ALT_CONTROL_UP) 
 	|| keyboard_check_pressed(global.CONTROL_UP) 
@@ -22,7 +23,30 @@ else if((keyboard_check_pressed(global.ACTION)
 		|| gamepad_button_check_pressed(0,gp_face1))
 		&& !(whichMenu = "Waiting for input"))
 	srpt_menu();
-else if(gamepad_axis_value(0,gp_axislv) == 0) controlStickPressed = false;
+	
+//options slider bar
+if (whichMenu = "Options") 
+   && (mpos > 3)
+   && (keyboard_check_pressed(global.CONTROL_RIGHT)
+   || keyboard_check_pressed(global.ALT_CONTROL_RIGHT)
+   || (gamepad_axis_value(0,gp_axislh) > 0))
+   && !controlStickPressed {
+	   barMove = 1;
+	   controlStickPressed = true;
+	   srpt_menu();
+}
+else if (whichMenu = "Options") 
+   && (mpos > 3)
+   && (keyboard_check_pressed(global.CONTROL_LEFT)
+   || keyboard_check_pressed(global.ALT_CONTROL_LEFT)
+   || (gamepad_axis_value(0,gp_axislh) < 0))
+   && !controlStickPressed {
+	   barMove = -1;
+	   controlStickPressed = true;
+	   srpt_menu();
+}
+
+if(gamepad_axis_value(0,gp_axislv) == 0) controlStickPressed = false;
 
 mpos += move;
 //-----------------------------------------------------------------------------------------
@@ -44,6 +68,10 @@ else if(whichMenu = "Waiting for input") {
 		}
 	}
 }
+
+
+
+
 //updating buttons for controls menu
 buttons[1] = global.CONTROL_UP;
 buttons[2] = global.CONTROL_DOWN;
