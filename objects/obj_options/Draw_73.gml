@@ -19,14 +19,20 @@ if(loaded) {
 //-----------------------------------------------------------------------------------------
 //New optimized code
 //-----------------------------------------------------------------------------------------
-	if !(whichMenu == "Waiting for input") {
+	
 		for( m = 0; m < array_length_1d(menu); m += 1)
 			{
 			
 				if(mpos == m)
 					draw_set_color(c_yellow);
 				else draw_set_color(c_white);
-				draw_text(x, y +(m * space), string(menu[m]));
+				if (m < 4)
+					draw_text(x, y +(m * space), string(menu[m]));
+				else {
+					draw_text(x, y + (m* space), string(menu[m]));
+					draw_sprite(spr_slider_bar, 0, x, y + (m * space + 20));
+					if(m == 5) draw_sprite(spr_slider_icon,0,(x - 50) + 100 * global.MUSIC_VOLUME, y + (m * space + 20) );
+					if(m == 6) draw_sprite(spr_slider_icon,0,(x - 50) + 100 * global.SOUNDFX_VOLUME, y + (m * space + 20) );
+				}
 			}
-	}
 }

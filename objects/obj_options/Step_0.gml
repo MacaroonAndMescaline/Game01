@@ -1,4 +1,4 @@
-/// @description 
+/// @description Options unique step
 /// @author John Tholen
 
 var move = 0;
@@ -22,6 +22,26 @@ else if(keyboard_check_pressed(global.ACTION)
         || keyboard_check_pressed(global.CONFIRM)
 		|| gamepad_button_check_pressed(0,gp_face1))
 	srpt_menu();
+	
+//options slider bar
+if (mpos > 3)
+   && (keyboard_check_pressed(global.CONTROL_RIGHT)
+   || keyboard_check_pressed(global.ALT_CONTROL_RIGHT)
+   || (gamepad_axis_value(0,gp_axislh) > 0))
+   && !controlStickPressed {
+	   barMove = 1;
+	   controlStickPressed = true;
+	   srpt_menu();
+}
+else if (mpos > 3)
+   && (keyboard_check_pressed(global.CONTROL_LEFT)
+   || keyboard_check_pressed(global.ALT_CONTROL_LEFT)
+   || (gamepad_axis_value(0,gp_axislh) < 0))
+   && !controlStickPressed {
+	   barMove = -1;
+	   controlStickPressed = true;
+	   srpt_menu();
+}
 
 if(gamepad_axis_value(0,gp_axislv) == 0) controlStickPressed = false;
 
