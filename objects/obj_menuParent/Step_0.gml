@@ -32,4 +32,4 @@ mpos += move;
 if(move !=0) {
 	if(mpos > array_length_1d(menu) - 1) mpos = 0;
 	if(mpos < 0) mpos = array_length_1d(menu) - 1;
-}
+} 
