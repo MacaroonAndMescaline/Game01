@@ -103,36 +103,41 @@ else if(whichMenu == "Controls") {
 			instance_destroy();
 			break;
 		case 1:
+			loaded = false;
+			instance_create_layer(x,y,"MenuLayer",obj_gamepad);
+			instance_destroy();
+			break;
+		case 2:
 			alarm[0] = delay;
 			mpos = 0;
 			keyToChange = "up";
 			whichMenu = "Waiting for input";
 			break;
-		case 2:
+		case 3:
 			alarm[0] = delay;
 			mpos = 0;
 			keyToChange = "down";
 			whichMenu = "Waiting for input";
 			break;
-		case 3:
+		case 4:
 			alarm[0] = delay;
 			mpos = 0;
 			keyToChange = "left";
 			whichMenu = "Waiting for input";
 			break;
-		case 4:
+		case 5:
 			alarm[0] = delay;
 			mpos = 0;
 			keyToChange = "right";
 			whichMenu = "Waiting for input";
 			break;
-		case 5:
+		case 6:
 			alarm[0] = delay;
 			mpos = 0;
 			keyToChange = "action";
 			whichMenu = "Waiting for input";
 			break;
-		case 6:
+		case 7:
 			alarm[0] = delay;
 			mpos = 0;
 			keyToChange = "blink"
@@ -194,4 +199,20 @@ else if(whichMenu == "Pause") {
 			
 	}
 	
+}
+//-----------------------------------------------
+//Gamepad Controls-------------------------------
+else if(whichMenu == "Gamepad") {
+	switch(mpos) {
+		case 0:
+			loaded = false;
+			instance_create_layer(x,y,"MenuLayer",obj_controls);
+			instance_destroy();
+			break;
+		case 1:
+			break;
+		case 2:
+		default:
+			break;
+	}
 }

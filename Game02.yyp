@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "27831bf1-8b76-4573-a0ec-774576848063",
+            "Value": {
+                "id": "37576837-881e-420e-bdfb-bf2439bb2a37",
+                "resourcePath": "objects\\obj_gamepad\\obj_gamepad.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2a6d544c-0821-44f0-940f-fe65cd8f1170",
             "Value": {
                 "id": "b92b8adf-f4bc-42ea-9564-066399bdcfb1",

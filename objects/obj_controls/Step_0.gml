@@ -47,9 +47,9 @@ else if(whichMenu = "Waiting for input") {
 }
 
 //updating buttons for controls menu
-buttons[1] = global.CONTROL_UP;
-buttons[2] = global.CONTROL_DOWN;
-buttons[3] = global.CONTROL_LEFT;
-buttons[4] = global.CONTROL_RIGHT;
-buttons[5] = global.ACTION;
-buttons[6] = global.BLINK;
+buttons[2] = global.CONTROL_UP;
+buttons[3] = global.CONTROL_DOWN;
+buttons[4] = global.CONTROL_LEFT;
+buttons[5] = global.CONTROL_RIGHT;
+buttons[6] = global.ACTION;
+buttons[7] = global.BLINK;

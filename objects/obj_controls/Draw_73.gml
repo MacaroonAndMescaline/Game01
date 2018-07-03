@@ -26,15 +26,14 @@ if(loaded) {
 				if(mpos == m)
 					draw_set_color(c_yellow);
 				else draw_set_color(c_white);
-				if (m == 0) {
-					draw_text(x,y, string(menu[0]));
-					draw_set_halign(fa_left);
+				if (m < 2) {
+					draw_text(x,y + (m *space), string(menu[m]));
 				}
 				else {
+					draw_set_halign(fa_left);
 					draw_text(x - 150, y +(m * space), string(menu[m]));
 					draw_text(x + 100, y +(m * space),  + " <" + srpt_key_to_string(buttons[m]) + "> ");
 				}
-				
 			}
 	}
 	else if(whichMenu == "Waiting for input") {
