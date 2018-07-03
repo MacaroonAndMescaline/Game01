@@ -20,6 +20,12 @@ global.ALT_CONTROL_UP= ini_read_real("alternate controls","up",0);
 
 
 //xbox controller controls
+global.GP_HORIZONTAL_MOVE =	ini_read_real("gamepad","horizontal",gp_axislh);
+global.GP_VERTICAL_MOVE = ini_read_real("gamepad","vertical",gp_axislv);
+global.GP_ESCAPE = ini_read_real("gamepad","escape",gp_start);
+global.GP_ACTION = ini_read_real("gamepad","action",gp_face1);
+global.GP_BLINK = ini_read_real("gamepad","blink",gp_face4);
+
 ini_close();
 
 ini_open("settings/window.ini")
