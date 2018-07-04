@@ -210,8 +210,30 @@ else if(whichMenu == "Gamepad") {
 			instance_destroy();
 			break;
 		case 1:
+			alarm[0] = delay;
+			mpos = 0;
+			keyToChange = "horizontal";
+			whichMenu = "Waiting for input GP";
+			break;
 			break;
 		case 2:
+			alarm[0] = delay;
+			mpos = 0;
+			keyToChange = "vertical";
+			whichMenu = "Waiting for input GP";
+			break;
+		case 3:
+			alarm[0] = delay;
+			mpos = 0;
+			keyToChange = "action";
+			whichMenu = "Waiting for input GP";
+			break;
+		case 4:
+			alarm[0] = delay;
+			mpos = 0;
+			keyToChange = "blink";
+			whichMenu = "Waiting for input GP";
+			break;
 		default:
 			break;
 	}

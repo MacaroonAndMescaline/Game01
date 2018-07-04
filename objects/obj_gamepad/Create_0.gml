@@ -3,7 +3,7 @@
 
 whichMenu = "Gamepad";
 menu = ["-back-","horizontal move","vertical move", "action", "blink"];
-waiting= ["PLEASE PRESS ANY BUTTON ON GAMEPAD","Press Enter/Escape to cancel"];
+waiting= ["PLEASE PRESS ANY BUTTON ON GAMEPAD","Press Enter/Escape to cancel", "Press Start on Gamepad to cancel"];
 loaded = true;
 
 button[1] = global.GP_HORIZONTAL_MOVE;
