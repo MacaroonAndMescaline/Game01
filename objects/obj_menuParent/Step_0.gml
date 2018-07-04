@@ -6,24 +6,24 @@ barMove = 0;
 //keyboad input
 if(keyboard_check_pressed(global.ALT_CONTROL_UP) 
 	|| keyboard_check_pressed(global.CONTROL_UP) 
-	|| gamepad_axis_value(0,gp_axislv) < 0
+	|| gamepad_axis_value(0,global.GP_VERTICAL_MOVE) < 0
 	&& !controlStickPressed) {
 	move = -1;
 	controlStickPressed = true;
 }
 else if(keyboard_check_pressed(global.ALT_CONTROL_DOWN) 
 		|| keyboard_check_pressed(global.CONTROL_DOWN)
-		|| gamepad_axis_value(0,gp_axislv) > 0
+		|| gamepad_axis_value(0,global.GP_VERTICAL_MOVE) > 0
 		&& !controlStickPressed) {
 	move = 1;
 	controlStickPressed = true;
 }
 else if(keyboard_check_pressed(global.ACTION)
         || keyboard_check_pressed(global.CONFIRM)
-		|| gamepad_button_check_pressed(0,gp_face1))
+		|| gamepad_button_check_pressed(0,global.GP_ACTION))
 	srpt_menu();
 
-if(gamepad_axis_value(0,gp_axislv) == 0) controlStickPressed = false;
+if(gamepad_axis_value(0,global.GP_VERTICAL_MOVE) == 0) controlStickPressed = false;
 
 mpos += move;
 //-----------------------------------------------------------------------------------------

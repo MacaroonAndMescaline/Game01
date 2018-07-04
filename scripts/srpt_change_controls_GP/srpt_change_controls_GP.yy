@@ -1,8 +1,8 @@
 {
-    "id": "54e5a229-637c-4510-ba94-f2690857b347",
+    "id": "bcf82a1a-710e-4c38-bbc5-31246644802c",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "srpt_change_gp_controls",
+    "name": "srpt_change_controls_GP",
     "IsCompatibility": false,
     "IsDnD": false
 }

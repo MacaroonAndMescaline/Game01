@@ -4,25 +4,25 @@ var move = 0;
 //keyboad input
 if(keyboard_check_pressed(global.ALT_CONTROL_UP) 
 	|| keyboard_check_pressed(global.CONTROL_UP) 
-	|| gamepad_axis_value(0,gp_axislv) < 0
+	|| gamepad_axis_value(0,global.GP_VERTICAL_MOVE) < 0
 	&& !controlStickPressed) {
 	move = -1;
 	controlStickPressed = true;
 }
 else if(keyboard_check_pressed(global.ALT_CONTROL_DOWN) 
 		|| keyboard_check_pressed(global.CONTROL_DOWN)
-		|| gamepad_axis_value(0,gp_axislv) > 0
+		|| gamepad_axis_value(0,global.GP_VERTICAL_MOVE) > 0
 		&& !controlStickPressed) {
 	move = 1;
 	controlStickPressed = true;
 }
 else if((keyboard_check_pressed(global.ACTION)
         || keyboard_check_pressed(global.CONFIRM)
-		|| gamepad_button_check_pressed(0,gp_face1))
+		|| gamepad_button_check_pressed(0,global.GP_ACTION))
 		&& !(whichMenu = "Waiting for input GP"))
 	srpt_menu();
 
-if(gamepad_axis_value(0,gp_axislv) == 0) controlStickPressed = false;
+if(gamepad_axis_value(0,global.GP_VERTICAL_MOVE) == 0) controlStickPressed = false;
 
 mpos += move;
 
@@ -36,15 +36,17 @@ if(move !=0) && !(whichMenu = "Waiting for input GP") {
 else if(whichMenu = "Waiting for input GP") {
 	if(alarm[0] < 0) {
 		for(var j = 0; j < array_length_1d(global.GP_BUTTONS); j++) {
-		if(keyboard_key) {
-			if((!keyboard_check_pressed(global.ESCAPE)
-			&& !keyboard_check_pressed(global.CONFIRM)
-			&& !gamepad_button_check_pressed(0,global.GP_ESCAPE))
-			&& keyboard_check_pressed(keyboard_key))
-				srpt_menu();
-			else if(keyboard_check_pressed(keyboard_key))
-				whichMenu = "Controls";
-		}
+			if(gamepad_button_check_pressed(0,global.GP_BUTTONS[j])) {
+				if((!keyboard_check_pressed(global.ESCAPE)
+				&& !keyboard_check_pressed(global.CONFIRM)
+				&& !gamepad_button_check_pressed(0,global.GP_ESCAPE))
+				&& gamepad_button_check_pressed(0, global.GP_BUTTONS[j])) {
+					whichButtonPressed = global.GP_BUTTONS[j];
+					srpt_menu();
+				}
+				else if(gamepad_button_check(0,global.GP_BUTTONS[j]))
+					whichMenu = "Gamepad";
+			}
 		}
 	}
 }

@@ -156,6 +156,16 @@ else if(whichMenu == "Waiting for input") {
 	}
 }
 //-----------------------------------------------
+//Changing Gamepad Controls----------------------
+else if(whichMenu == "Waiting for input GP") {
+	if(alarm[0] < 0) {
+		srpt_change_controls_GP();
+		whichMenu = "Gamepad";
+		mpos = 0;
+	}
+}
+
+//-----------------------------------------------
 //Resolution change------------------------------
 else if(whichMenu == "Resolution") {
 	switch(mpos) {
