@@ -32,6 +32,8 @@ if (mpos > 3)
 	   barMove = 1;
 	   controlStickPressed = true;
 	   srpt_menu();
+	   if(mpos == 6)
+	   audio_play_sound(snd_TestFX,1,false);
 }
 else if (mpos > 3)
    && (keyboard_check_pressed(global.CONTROL_LEFT)
@@ -41,6 +43,8 @@ else if (mpos > 3)
 	   barMove = -1;
 	   controlStickPressed = true;
 	   srpt_menu();
+	   if(mpos == 6)
+	   audio_play_sound(snd_TestFX,1,false);
 }
 
 if(gamepad_axis_value(0,global.GP_VERTICAL_MOVE) == 0)  && (gamepad_axis_value(0,global.GP_HORIZONTAL_MOVE) == 0)
