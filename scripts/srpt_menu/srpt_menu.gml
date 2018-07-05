@@ -162,6 +162,7 @@ else if(whichMenu == "Waiting for input GP") {
 		srpt_change_controls_GP();
 		whichMenu = "Gamepad";
 		mpos = 0;
+		alarm[0] = delay;
 	}
 }
 
@@ -212,7 +213,7 @@ else if(whichMenu == "Pause") {
 }
 //-----------------------------------------------
 //Gamepad Controls-------------------------------
-else if(whichMenu == "Gamepad") {
+else if(whichMenu == "Gamepad") && (alarm[0] < 0) {
 	switch(mpos) {
 		case 0:
 			loaded = false;
