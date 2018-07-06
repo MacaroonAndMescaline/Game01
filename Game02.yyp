@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "166e5e95-b6e3-4030-a2c9-d555beeba638",
+            "Value": {
+                "id": "66479e1e-b507-4f51-8a43-7fef412e581b",
+                "resourcePath": "objects\\obj_vision\\obj_vision.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1c321df3-a8ca-42be-a773-299286e5ea7d",
             "Value": {
                 "id": "715c01a3-3984-4c5f-b31e-680a6705cc40",

@@ -25,6 +25,9 @@ else {
 if(keyboard_check_pressed(global.ACTION) || gamepad_button_check_pressed(0,global.GP_ACTION)) {
 	event_user(0);
 }
+if(keyboard_check_pressed(global.BLINK) || gamepad_button_check_pressed(0,global.GP_BLINK)) {
+	with(visionBlackout) { event_user(0); }
+}
 
 //Pausing game to show start menu
 if(keyboard_check_pressed(global.ESCAPE)) || gamepad_button_check_pressed(0,global.GP_ESCAPE) { //room_goto(rm_splash);
