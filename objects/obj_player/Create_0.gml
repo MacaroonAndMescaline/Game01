@@ -25,4 +25,5 @@ picked_up_item = false;
 obj_direction_right = true;
 grounded = false;
 
+//vision stuff
 visionBlackout = instance_create_layer(x,y,"MenuLayer",obj_vision);
