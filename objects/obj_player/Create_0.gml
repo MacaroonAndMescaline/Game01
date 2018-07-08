@@ -24,10 +24,14 @@ picked_up_item = false;
 //some basic shit
 obj_direction_right = true;
 grounded = false;
+//climbing shit
+climb = false;
 climb_right = "";
 climb = false;
 climb_width = 0;
-
+climb_x = 0;
+climb_y = 0;
+climbphase2 = false;
 //vision stuff
 visionBlackout = instance_create_layer(x,y,"MenuLayer",obj_vision);
 
