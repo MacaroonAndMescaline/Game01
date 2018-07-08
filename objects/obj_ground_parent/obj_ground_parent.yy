@@ -4,7 +4,26 @@
     "mvc": "1.0",
     "name": "obj_ground_parent",
     "eventList": [
-        
+        {
+            "id": "467470ba-c803-41e0-a7a3-02512f4e0dc6",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "208a928b-a6dc-45b2-9386-dbd10449baf6"
+        },
+        {
+            "id": "02d5690c-7279-4179-acc2-e3748156bce9",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "208a928b-a6dc-45b2-9386-dbd10449baf6"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
@@ -65,6 +84,34 @@
             "value": "0",
             "varName": "slope",
             "varType": 1
+        },
+        {
+            "id": "3b775be5-c2ee-494e-ae1f-c0f7199754d7",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "climbable ",
+            "varType": 3
+        },
+        {
+            "id": "10ad28de-7864-425c-9f19-aff755e6586f",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "colliding",
+            "varType": 3
         }
     ],
     "solid": true,

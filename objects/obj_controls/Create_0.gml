@@ -9,6 +9,7 @@ menu[4] = "left";
 menu[5] = "right";
 menu[6] = "action";
 menu[7] = "blink";
+menu[8] = "climb";
 
 //waiting for input
 waiting[0] = "PLEASE PRESS ANY KEY";
@@ -21,5 +22,6 @@ buttons[4] = global.CONTROL_LEFT;
 buttons[5] = global.CONTROL_RIGHT;
 buttons[6] = global.ACTION;
 buttons[7] = global.BLINK;
+buttons[8] = global.CLIMB;
 
 loaded = true;

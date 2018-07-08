@@ -7,3 +7,4 @@ if(keyToChange == "up") return global.CONTROL_UP;
 if(keyToChange == "down") return global.CONTROL_DOWN;
 if(keyToChange == "action") return global.ACTION;
 if(keyToChange == "blink") return global.BLINK;
+if(keyToChange == "climb") return global.CLIMB;

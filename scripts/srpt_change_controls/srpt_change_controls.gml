@@ -33,6 +33,11 @@ if(keyboard_key == global.BLINK && keyToChange != "blink") {
 	keySwap = "blink";
 	swapBut = srpt_key_obtain();
 }
+if(keyboard_key == global.CLIMB && keyToChange != "climb") {
+	swap = true;
+	keySwap = "climb";
+	swapBut = srpt_key_obtain();
+}
 //-------------------------------------------------------------
 //Normal key change if there is no need for swapping-----------
 //-------------------------------------------------------------

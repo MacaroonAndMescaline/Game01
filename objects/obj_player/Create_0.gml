@@ -24,6 +24,10 @@ picked_up_item = false;
 //some basic shit
 obj_direction_right = true;
 grounded = false;
+climb_right = "";
+climb = false;
+climb_width = 0;
 
 //vision stuff
 visionBlackout = instance_create_layer(x,y,"MenuLayer",obj_vision);
+

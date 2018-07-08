@@ -23,6 +23,11 @@ else if(whichButtonPressed == global.GP_BLINK && keyToChange != "blink") {
 	swap = true;
 	swapBut = srpt_key_obtain_GP();
 }
+else if(whichButtonPressed == global.GP_CLIMB && keyToChange != "climb") {
+	keySwap = "climb";
+	swap = true;
+	swapBut = srpt_key_obtain_GP();
+}
 //---------
 //------------
 //---------

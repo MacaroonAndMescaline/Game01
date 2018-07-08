@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "073d5109-d672-430d-9f73-4a826e0ce74e",
+            "Value": {
+                "id": "61c3b05c-3a89-4b1a-935a-8eb5e553d714",
+                "resourcePath": "sprites\\spr_ground_climb\\spr_ground_climb.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "08b3f7e8-f6f7-40ca-82b8-7d10b7771dba",
             "Value": {
                 "id": "762fdb52-88a8-4a51-9e39-41de0ce2e325",
@@ -279,6 +287,14 @@
             }
         },
         {
+            "Key": "60fe195d-57a9-4818-acd7-c06adce096ef",
+            "Value": {
+                "id": "2068b379-12ad-4755-acba-db6b8ea4130e",
+                "resourcePath": "rooms\\rm_beta_climb\\rm_beta_climb.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "6103225f-53dc-481c-9cbb-65243bea2550",
             "Value": {
                 "id": "fb249f49-30bb-4c98-8a67-c3fe5166567b",
@@ -396,6 +412,14 @@
                 "id": "80e4b570-0f85-4403-838e-51028f81d679",
                 "resourcePath": "views\\8b4a05ed-a0d3-45a9-aaac-3bd3f548d992.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "905e2ee1-fd9d-4a8f-950e-00b283a9023e",
+            "Value": {
+                "id": "873469ef-40d7-471e-823d-a4ac07444830",
+                "resourcePath": "objects\\obj_ground_climb\\obj_ground_climb.yy",
+                "resourceType": "GMObject"
             }
         },
         {

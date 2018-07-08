@@ -11,6 +11,7 @@ global.ACTION = ini_read_real("controls","action",0);
 global.CONFIRM = ini_read_real("controls","confirm",0);
 global.ESCAPE = ini_read_real("controls","escape",0);
 global.BLINK = ini_read_real("controls","blink",20);
+global.CLIMB = ini_read_real("controls","climb",16);
 
 //Secondary Controls
 global.ALT_CONTROL_LEFT = ini_read_real("alternate controls","left",0);
@@ -25,6 +26,7 @@ global.GP_VERTICAL_MOVE = ini_read_real("gamepad","vertical",gp_axislv);
 global.GP_ESCAPE = ini_read_real("gamepad","escape",gp_start);
 global.GP_ACTION = ini_read_real("gamepad","action",gp_face1);
 global.GP_BLINK = ini_read_real("gamepad","blink",gp_face4);
+global.GP_CLIMB = ini_read_real("gamepad","climb",gp_face3);
 
 ini_close();
 

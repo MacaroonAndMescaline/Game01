@@ -87,6 +87,8 @@ else if(whichMenu == "Beta") {
 			break;
 		case 2:
 			room_goto(rm_beta_vision);
+		case 3:
+			room_goto(rm_beta_climb);
 		default:
 			break;
 		
@@ -142,6 +144,13 @@ else if(whichMenu == "Controls") {
 			mpos = 0;
 			keyToChange = "blink"
 			whichMenu = "Waiting for input";
+			break;
+		case 8:
+			alarm[0] = delay;
+			mpos = 0;
+			keyToChange = "climb";
+			whichMenu = "Waiting for input";
+			break;
 		default:
 			break;
 	}
@@ -243,6 +252,12 @@ else if(whichMenu == "Gamepad") && (alarm[0] < 0) {
 			alarm[0] = delay;
 			mpos = 0;
 			keyToChange = "blink";
+			whichMenu = "Waiting for input GP";
+			break;
+		case 5:
+			alarm[0] = delay;
+			mpos = 0;
+			keyToChange = "climb";
 			whichMenu = "Waiting for input GP";
 			break;
 		default:

@@ -17,6 +17,10 @@ if(keyToChange == "action") {
 if(keyToChange == "blink") {	
 	global.GP_BLINK = whichButtonPressed;
 }
+
+if(keyToChange == "climb") {
+	global.GP_CLIMB = whichButtonPressed;
+}
 //only runs when swapping keys
 if(swap) {
 	if(keySwap == "horizontal") {	
@@ -32,5 +36,8 @@ if(swap) {
 	}
 	if(keySwap == "blink") {
 		global.GP_BLINK = swapBut;
+	}
+	if(keySwap == "climb") {
+		global.GP_CLIMB = swapBut;
 	}
 }

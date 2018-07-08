@@ -25,6 +25,10 @@ if(keyToChange == "action") {
 if(keyToChange == "blink") {
 	global.BLINK = keyboard_key;	
 }
+
+if(keyToChange == "climb") {
+	global.CLIMB = keyboard_key;
+}
 //only runs when swapping keys
 if(swap) {
 	if(keySwap == "up") {	
@@ -48,5 +52,8 @@ if(swap) {
 	}
 	if(keySwap == "blink") {
 		global.BLINK = swapBut;
+	}
+	if(keySwap == "climb") {
+		global.CLIMB = swapBut;
 	}
 }
