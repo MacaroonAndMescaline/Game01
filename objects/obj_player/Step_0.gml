@@ -43,6 +43,11 @@ if(!climb) {
 			phy_position_y -= obj_speed;
 		else {
 			phy_position_y = climb_y;
+			if(climb_right)
+				while(!place_meeting(phy_position_x + 1,phy_position_y,obj_ground_parent))
+					phy_position_x += obj_speed;
+			else while(!place_meeting(phy_position_x - 1, phy_position_y,obj_ground_parent))
+				phy_position_x -= obj_speed;
 			climbphase2 = true;
 		}
 	} 
@@ -50,7 +55,7 @@ if(!climb) {
 	|| (keyboard_check_pressed(global.CONTROL_UP))
 	|| (keyboard_check_pressed(global.ALT_CONTROL_UP))
 	|| (gamepad_button_check_pressed(0,global.GP_ACTION))
-	|| (gamepad_axis_value(0,global.GP_VERTICAL_MOVE) > 0)
+	|| (gamepad_axis_value(0,global.GP_VERTICAL_MOVE) < 0)
 	|| (keyboard_check_pressed(global.CLIMB))
 	|| (gamepad_button_check_pressed(0,global.GP_CLIMB)) {
 		phy_position_x += climbXmove;
