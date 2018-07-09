@@ -193,10 +193,10 @@
         }
     ],
     "modelName": "GMRoom",
-    "parentId": "026d9efb-462a-48d9-bd6e-79d7eeee4055",
+    "parentId": "00000000-0000-0000-0000-000000000000",
     "physicsSettings":     {
         "id": "97c59ba0-f378-49e7-bfa5-9ad4f8fe78ca",
-        "inheritPhysicsSettings": true,
+        "inheritPhysicsSettings": false,
         "modelName": "GMRoomPhysicsSettings",
         "PhysicsWorld": true,
         "PhysicsWorldGravityX": 0,
