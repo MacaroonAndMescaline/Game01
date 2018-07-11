@@ -24,9 +24,16 @@ if(climb)
 && (alarm[1] < 0)
 && (place_free(x + obj_speed,y - obj_speed) || place_free(x - obj_speed, y - obj_speed)) 
 && grounded {
-	if(climb_right) climbXmove = abs(phy_position_x - climb_x);
-	else climbXmove = - abs(phy_position_x - climb_x) + (climb_width - sprite_width);
+	if(climb_right) { 
+		climbXmove = abs(phy_position_x - climb_x);
+		var beforeClimbMove = climbXmove - sprite_width;
+	}
+	else {
+		climbXmove = - abs(phy_position_x - climb_x) + (climb_width - sprite_width);
+		var beforeClimbMove = climbXmove + sprite_width;
+	}
 	 climbYmove = abs(phy_position_y - climb_y) + sprite_height;
+	 phy_position_x += beforeClimbMove;
 	//old way just teleports them there
 	//phy_position_x += climbXmove;
 	//phy_position_y -= climbYmove;
