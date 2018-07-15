@@ -24,7 +24,7 @@ if(!picked_up_item) && (alarm[0] < 0) {
 		if(place_meeting(x,y,obj_interactable_parent))
 			for(var i = 0; i <instance_count; i++){
 				if(object_get_parent(instance_id[i].object_index) == obj_interactable_parent) {
-					if(instance_id[i].colliding) {
+					if(instance_id[i].colliding) && (instance_id[i].throwable){
 						follow.held_name = object_get_name(instance_id[i]);
 						follow.held_object = instance_id[i].object_index;
 						follow.held_sprite = instance_id[i].sprite_index;

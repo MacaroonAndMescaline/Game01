@@ -128,6 +128,20 @@
             "value": "0",
             "varName": "obj_height",
             "varType": 1
+        },
+        {
+            "id": "e57595ed-1654-4a97-9ebe-43e5d7ef1f35",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "throwable",
+            "varType": 3
         }
     ],
     "solid": false,
