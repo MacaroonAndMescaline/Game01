@@ -218,8 +218,12 @@ else if(whichMenu == "Pause") {
 			room_goto(rm_splash);
 			break;
 		case 3:
+			if(room_exists(room_previous(room)))
+				room_goto_previous();
+			break;
+		case 4:
 			if room_exists(room_next(room)) 
-			room_goto_next();
+				room_goto_next();
 			break;
 		default:
 			break;
