@@ -216,6 +216,13 @@ else if(whichMenu == "Pause") {
 			physics_pause_enable(false);
 			instance_destroy();
 			room_goto(rm_splash);
+			break;
+		case 3:
+			if room_exists(room_next(room)) 
+			room_goto_next();
+			break;
+		default:
+			break;
 			
 	}
 	
