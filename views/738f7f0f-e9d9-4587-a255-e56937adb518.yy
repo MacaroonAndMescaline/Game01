@@ -5,7 +5,8 @@
     "name": "738f7f0f-e9d9-4587-a255-e56937adb518",
     "children": [
         "32e852a9-9737-4b54-bcf6-140a2028c8a6",
-        "cf90ff1b-3aeb-47b4-82bc-d86721afb902"
+        "cf90ff1b-3aeb-47b4-82bc-d86721afb902",
+        "f222bd46-55b5-452b-8312-353386a7a372"
     ],
     "filterType": "GMObject",
     "folderName": "load_zones",
