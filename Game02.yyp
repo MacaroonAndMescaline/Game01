@@ -175,6 +175,14 @@
             }
         },
         {
+            "Key": "29718bc5-1c78-4ea6-ab07-47972a11e125",
+            "Value": {
+                "id": "cfc2a51d-2571-4335-9561-1dedc5fd3c78",
+                "resourcePath": "views\\29718bc5-1c78-4ea6-ab07-47972a11e125.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "2a6d544c-0821-44f0-940f-fe65cd8f1170",
             "Value": {
                 "id": "b92b8adf-f4bc-42ea-9564-066399bdcfb1",
@@ -204,6 +212,14 @@
                 "id": "7379c007-3a09-41da-a17d-5a74cf0482d0",
                 "resourcePath": "scripts\\srpt_movement\\srpt_movement.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "32e852a9-9737-4b54-bcf6-140a2028c8a6",
+            "Value": {
+                "id": "ab9d7652-7a99-491b-a418-06973425f736",
+                "resourcePath": "objects\\obj_load_parent\\obj_load_parent.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -351,6 +367,14 @@
             }
         },
         {
+            "Key": "738f7f0f-e9d9-4587-a255-e56937adb518",
+            "Value": {
+                "id": "edbd2798-a2f1-41c8-b605-9ae4c5d25b7e",
+                "resourcePath": "views\\738f7f0f-e9d9-4587-a255-e56937adb518.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "73af6fa0-5b73-45c8-927c-f5fe0e611eb5",
             "Value": {
                 "id": "dd3c3ce1-7c20-46c3-b091-77ebfce637c4",
@@ -476,6 +500,14 @@
                 "id": "6f76c677-0df3-4952-acd4-ffab99f7eb4d",
                 "resourcePath": "views\\90a4f2e8-2b8c-461c-91fa-6cb27bfd5bee.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "92809f30-e820-4f59-9453-80b43735698d",
+            "Value": {
+                "id": "445c17ed-7ef5-4de9-af75-2b77c3ce9d1e",
+                "resourcePath": "sprites\\spr_load_zone\\spr_load_zone.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -660,6 +692,14 @@
                 "id": "5d58aa74-0166-46ae-bd4f-317ac1e9f6e8",
                 "resourcePath": "scripts\\srpt_key_to_string\\srpt_key_to_string.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "cf90ff1b-3aeb-47b4-82bc-d86721afb902",
+            "Value": {
+                "id": "2c754167-355e-4cc8-ad4a-aa0a764328a1",
+                "resourcePath": "objects\\obj_go_to_room\\obj_go_to_room.yy",
+                "resourceType": "GMObject"
             }
         },
         {
