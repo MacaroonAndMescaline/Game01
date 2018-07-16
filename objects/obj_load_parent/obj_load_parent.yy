@@ -50,6 +50,20 @@
             "value": "0",
             "varName": "load",
             "varType": 5
+        },
+        {
+            "id": "2b736ba6-2308-4336-9ec8-8d299acdbe22",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "came_from",
+            "varType": 5
         }
     ],
     "solid": false,
