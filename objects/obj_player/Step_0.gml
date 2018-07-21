@@ -62,6 +62,7 @@ if(!climb) {
 		phy_position_y -= sprite_height;
 		climb = false;
 		climbphase2 = false;
+		srpt_disable_platforms();
 	} else phy_position_y = climb_y;
 }
 //Pausing game to show start menu

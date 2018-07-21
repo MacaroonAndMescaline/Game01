@@ -89,6 +89,8 @@ else if(whichMenu == "Beta") {
 			room_goto(rm_beta_vision);
 		case 3:
 			room_goto(rm_beta_climb);
+		case 4:
+			room_goto(rm_beta_ladder);
 		default:
 			break;
 		

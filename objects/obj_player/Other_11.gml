@@ -17,13 +17,16 @@ with(pickup_range) {
 						break;
 					}
 				}
-				else follow.climb = false;
+				else { 
+					follow.climb = false;
+				}
 			}
 }
 if(climb) 
 && (alarm[1] < 0)
 && (place_free(x + obj_speed,y - obj_speed) || place_free(x - obj_speed, y - obj_speed)) 
 && grounded {
+	srpt_disable_platforms();
 	if(climb_right) { 
 		climbXmove = abs(phy_position_x - climb_x);
 		var beforeClimbMove = climbXmove - sprite_width;

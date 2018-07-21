@@ -15,12 +15,20 @@
             "objectId": "208a928b-a6dc-45b2-9386-dbd10449baf6",
             "propertyId": "dddae487-90c5-4976-9690-ab9d5cde43d3",
             "value": "True"
+        },
+        {
+            "id": "56493121-020a-4b6a-8831-e593f69a627d",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "208a928b-a6dc-45b2-9386-dbd10449baf6",
+            "propertyId": "3b775be5-c2ee-494e-ae1f-c0f7199754d7",
+            "value": "True"
         }
     ],
     "parentObjectId": "208a928b-a6dc-45b2-9386-dbd10449baf6",
     "persistent": false,
     "physicsAngularDamping": 0.1,
-    "physicsDensity": 0.5,
+    "physicsDensity": 0,
     "physicsFriction": 0.2,
     "physicsGroup": 0,
     "physicsKinematic": false,
