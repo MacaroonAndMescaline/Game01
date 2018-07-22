@@ -1,16 +1,16 @@
 /// @description CLIMBING
-// You can write your code in this editor
-
+//Changes to the interactable range of the player
 with(pickup_range) {
 	if(place_meeting(x,y,obj_ground_parent))
 			for(var i = 0; i <instance_count; i++){
 				if(object_get_parent(instance_id[i].object_index) == obj_ground_parent) {
 					if(instance_id[i].climbable) && (instance_id[i].colliding) 
-					&& (instance_id[i].y < y) { 
-						follow.climb = true;
-						if(instance_id[i].x < x)
-							follow.climb_right = false;
+					{
+						if(instance_id[i].ladder) || (instance_id[i].y < y)
+							follow.climb = true;
+						if(instance_id[i].x < x) follow.climb_right = false;
 						else follow.climb_right = true;
+						
 						follow.climb_x = instance_id[i].x;
 						follow.climb_y = instance_id[i].y;
 						follow.climb_width = instance_id[i].sprite_width;
