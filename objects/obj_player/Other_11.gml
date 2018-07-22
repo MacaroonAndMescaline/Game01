@@ -8,9 +8,14 @@ with(pickup_range) {
 					{
 						if(instance_id[i].ladder) || (instance_id[i].y < y)
 							follow.climb = true;
-						if(instance_id[i].x < x) follow.climb_right = false;
-						else follow.climb_right = true;
-						
+						if(!instance_id[i].ladder) {
+							if(instance_id[i].x < x) follow.climb_right = false;
+							else follow.climb_right = true;
+						}
+						else { 
+							follow.climb_right = instance_id[i].ladder_face_right;
+							follow.ladder = true;
+						}
 						follow.climb_x = instance_id[i].x;
 						follow.climb_y = instance_id[i].y;
 						follow.climb_width = instance_id[i].sprite_width;
@@ -42,4 +47,5 @@ if(climb)
 	//phy_position_y -= climbYmove;
 	alarm[1] = 5;
 }
+else if(ladder) phy_active = false;
 else climb = false;

@@ -32,6 +32,7 @@ climb_width = 0;
 climb_x = 0;
 climb_y = 0;
 climbphase2 = false;
+ladder = false;
 //vision stuff
 visionBlackout = instance_create_layer(x,y,"MenuLayer",obj_vision);
 
