@@ -194,7 +194,7 @@
             "Key": "2e68cd01-19c9-469e-9651-31719189a029",
             "Value": {
                 "id": "0c595a07-693f-4ec4-8545-c211169e3627",
-                "resourcePath": "rooms\\rm_level0\\rm_level0.yy",
+                "resourcePath": "rooms\\rm_level_Snorgon\\rm_level_Snorgon.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -650,7 +650,7 @@
             "Key": "bd34d07d-dd71-42ff-8526-41986b59b84d",
             "Value": {
                 "id": "f867964f-22cc-4e61-afb9-91ac570701e3",
-                "resourcePath": "rooms\\rm_level_1\\rm_level_1.yy",
+                "resourcePath": "rooms\\rm_level_Path_into_Cave\\rm_level_Path_into_Cave.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -895,11 +895,27 @@
             }
         },
         {
+            "Key": "fb3b103d-a688-4251-b46d-9ebcf00d25c1",
+            "Value": {
+                "id": "a05a8eee-7ea5-4190-b3e7-f0f8218f6e11",
+                "resourcePath": "rooms\\rm_level_Siren_Area\\rm_level_Siren_Area.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "fb67d63a-86fc-4ca7-8c7c-29943da06981",
             "Value": {
                 "id": "cad32936-2a83-4c2f-82dd-dad0fc022cee",
                 "resourcePath": "objects\\obj_options\\obj_options.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "fc2a57fd-7054-41df-b7be-532b7863f7de",
+            "Value": {
+                "id": "1d95aeef-1c2e-4c9f-98bb-89c2fc86c6ee",
+                "resourcePath": "rooms\\rm_level_Sirens_Path\\rm_level_Sirens_Path.yy",
+                "resourceType": "GMRoom"
             }
         }
     ],
