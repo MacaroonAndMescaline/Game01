@@ -112,6 +112,48 @@
             "value": "0",
             "varName": "colliding",
             "varType": 3
+        },
+        {
+            "id": "dddae487-90c5-4976-9690-ab9d5cde43d3",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "ladder",
+            "varType": 3
+        },
+        {
+            "id": "098b558b-27eb-49d3-9b96-65b4087f8934",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "ladder_face_right",
+            "varType": 3
+        },
+        {
+            "id": "a354506b-2540-4ee2-ad48-64b4e269ac85",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "platform",
+            "varType": 3
         }
     ],
     "solid": true,
