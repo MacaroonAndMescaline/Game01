@@ -327,6 +327,14 @@
             }
         },
         {
+            "Key": "4a7b0b64-7610-412b-986b-49c791eecd3a",
+            "Value": {
+                "id": "d1fb6820-39cd-4fa8-b5a1-373a6fd2952a",
+                "resourcePath": "scripts\\srpt_change_physics\\srpt_change_physics.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "508d0183-b847-4db3-9698-4905b9cfae5b",
             "Value": {
                 "id": "c9a40de4-13cf-4048-bd0f-3b124cce0a6b",
@@ -972,6 +980,7 @@
         "3f813f53-1f55-4a0d-8500-bea1ced74fea",
         "3530dc90-e5ab-4941-a6fe-1e2a35cebf9c",
         "80d674f3-bd52-4440-bb21-11f4b7ea06e2",
+        "4a7b0b64-7610-412b-986b-49c791eecd3a",
         "32d2fd98-941d-4c7f-bc40-30447cc418f6",
         "1326bf5c-5b78-453e-b3bb-135d1e2acfa6"
     ],
