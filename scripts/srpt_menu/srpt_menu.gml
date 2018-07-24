@@ -203,7 +203,7 @@ else if(whichMenu == "Pause") {
 		case 0: 
 			loaded = false;
 			instance_activate_all();
-			gamePause = false;
+			global.PAUSE = false;
 			physics_pause_enable(false);
 			instance_destroy();
 			break;

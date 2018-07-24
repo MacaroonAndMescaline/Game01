@@ -62,3 +62,4 @@ global.GP_BUTTONS = [gp_face1,gp_face2,gp_face3,gp_face4,gp_shoulderl,gp_shoulde
 					 
 //setting some global variables up
 global.CAME_FROM = 0;
+global.PAUSE = false;
