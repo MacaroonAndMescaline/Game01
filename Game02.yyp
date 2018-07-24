@@ -207,6 +207,14 @@
             }
         },
         {
+            "Key": "2d94b79a-8917-40d6-b65c-0662e07b3671",
+            "Value": {
+                "id": "37493990-c815-4efe-a655-0bfe9a795682",
+                "resourcePath": "rooms\\rm_level_Spider_Area\\rm_level_Spider_Area.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "2e68cd01-19c9-469e-9651-31719189a029",
             "Value": {
                 "id": "0c595a07-693f-4ec4-8545-c211169e3627",
@@ -340,6 +348,14 @@
                 "id": "e163fc65-47ba-41ba-b99c-710bc2b56d13",
                 "resourcePath": "objects\\obj_ground_ladder\\obj_ground_ladder.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "5927c6a2-f651-4dab-99d3-43c6134f389e",
+            "Value": {
+                "id": "9f054d90-8de2-4a25-9fd5-43767be87abb",
+                "resourcePath": "rooms\\rm_level_Sewer_Entry\\rm_level_Sewer_Entry.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -636,6 +652,14 @@
                 "id": "8ebd2315-9ebc-4bc4-8340-e589b1fddca6",
                 "resourcePath": "scripts\\srpt_gp_to_string\\srpt_gp_to_string.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "a3092821-e92b-402a-8ee2-80d47399c14a",
+            "Value": {
+                "id": "550f685f-334d-4523-a41c-1d6ad323e9e1",
+                "resourcePath": "rooms\\rm_level_Entry_of_Cave\\rm_level_Entry_of_Cave.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
