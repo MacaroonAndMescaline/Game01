@@ -64,5 +64,5 @@ if(climb)
 	//phy_position_y -= climbYmove;
 	alarm[1] = 5;
 }
-else if(ladder) phy_active = false;
+else if(ladder) phy_active = false
 else climb = false;

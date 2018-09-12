@@ -96,9 +96,9 @@ else {
 //moving to proper location before allowing for movement
 //------------------------------------------------------
 		if(!climbphase2) {
-			if(above_ladder) phy_position_y = climb_y;
+			//if(above_ladder) phy_position_y -= climb_y;
 			if(climb_right) phy_position_x = climb_x + climb_width;
-			else phy_position_y = climb_x - sprite_width;
+			//else phy_position_y = climb_x - sprite_width;
 			climbphase2 = true;
 		}
 //---------------------------
