@@ -96,11 +96,9 @@ else {
 //moving to proper location before allowing for movement
 //------------------------------------------------------
 		if(!climbphase2) {
-			phy_position_y = climb_y;
-			if(climb_right)
-					phy_position_x = climb_x + climb_width;
-			else 
-				phy_position_y = climb_x - sprite_width;
+			if(above_ladder) phy_position_y = climb_y;
+			if(climb_right) phy_position_x = climb_x + climb_width;
+			else phy_position_y = climb_x - sprite_width;
 			climbphase2 = true;
 		}
 //---------------------------
@@ -140,6 +138,7 @@ else {
 //-----------------------------------------------
 //Pausing game to show start menu----------------
 //-----------------------------------------------
-if(keyboard_check_pressed(global.ESCAPE)) || gamepad_button_check_pressed(0,global.GP_ESCAPE) { //room_goto(rm_splash);
+if(keyboard_check_pressed(global.ESCAPE)) || gamepad_button_check_pressed(0,global.GP_ESCAPE) { 
+	//room_goto(rm_splash);
 	instance_create_layer(x,y,"MenuLayer",obj_pause);
 }
