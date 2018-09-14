@@ -45,6 +45,9 @@ if(!climb) {
 		event_user(1)
 	}
 } 
+//--------------------------------------------
+//This is where climbing starts===============
+//--------------------------------------------
 else {
 	phy_linear_velocity_y = 0;
 //--------------------------------------------
@@ -95,44 +98,16 @@ else {
 //------------------------------------------------------
 //moving to proper location before allowing for movement
 //------------------------------------------------------
-		if(!climbphase2) {
-			//if(above_ladder) phy_position_y -= climb_y;
-			if(climb_right) phy_position_x = climb_x + climb_width;
-			//else phy_position_y = climb_x - sprite_width;
-			climbphase2 = true;
-		}
+
 //---------------------------
 //Allowing moving up and down
 //---------------------------
-		else {
-			var yadd = 0;
-			if(keyboard_check_pressed(global.CONTROL_UP) 
-			|| keyboard_check_pressed(global.ALT_CONTROL_UP)
-			|| gamepad_axis_value(0,global.GP_VERTICAL_MOVE) < 0){
-				var yadd = -1;
-			} else if(keyboard_check_pressed(global.CONTROL_DOWN) 
-			|| keyboard_check_pressed(global.ALT_CONTROL_DOWN)
-			|| gamepad_axis_value(0,global.GP_VERTICAL_MOVE) > 0) {
-				var yadd = 1;
-			}
-			phy_position_y += obj_speed * yadd;
-			if(phy_position_y < climb_y) {
-				phy_position_y = climb_y;
-				phy_position_x += climbXmove;
-				phy_position_y -= sprite_height;
-				climb = false;
-				climbphase2 = false;
-				ladder = false;
-				phy_active = true;
-				srpt_disable_platforms();
-			} else if(place_meeting(x,y + obj_speed,obj_ground_parent)) {
-				climb = false;
-				climbphase2 = false;
-				ladder = false;
-				phy_active = true;
-				srpt_disable_platforms();
-			}
-		}
+		//make sure to use these
+		phy_active = true;
+		srpt_disable_platforms();
+		climb = false;
+		climbphase2 = false
+		ladder = false;
 	}
 }
 //-----------------------------------------------

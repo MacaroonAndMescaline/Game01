@@ -58,7 +58,7 @@ if(climb)
 		var beforeClimbMove = climbXmove + sprite_width;
 	}
 	 climbYmove = abs(phy_position_y - climb_y) + sprite_height;
-	 phy_position_x += beforeClimbMove;
+	 if(!ladder) phy_position_x += beforeClimbMove;
 	//old way just teleports them there
 	//phy_position_x += climbXmove;
 	//phy_position_y -= climbYmove;
