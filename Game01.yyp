@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "1e53152f-ed5a-442a-b724-be3d2ba15134",
+            "Value": {
+                "id": "69caec48-7316-4d7a-9694-4fc0a65e80a1",
+                "resourcePath": "views\\1e53152f-ed5a-442a-b724-be3d2ba15134.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "208a928b-a6dc-45b2-9386-dbd10449baf6",
             "Value": {
                 "id": "f784aa03-186f-4e5e-9339-579c8124124a",
@@ -468,6 +476,14 @@
                 "id": "f494c5fe-2d91-406b-80f4-5c95b05207ee",
                 "resourcePath": "objects\\obj_master_physics\\obj_master_physics.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "751d6a73-8623-49ed-8641-57261ba92526",
+            "Value": {
+                "id": "13076e47-7322-4157-816b-0c0cb0d084cd",
+                "resourcePath": "views\\751d6a73-8623-49ed-8641-57261ba92526.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
