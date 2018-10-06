@@ -142,20 +142,6 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "d09ac9ee-0e16-49d9-9aaf-5481ba8357e9",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "5",
-            "varName": "obj_speed",
-            "varType": 1
-        },
-        {
             "id": "af678b34-9aa2-45ac-b794-48933151b32f",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -181,34 +167,6 @@
             "resourceFilter": 1023,
             "value": "30",
             "varName": "obj_height",
-            "varType": 1
-        },
-        {
-            "id": "546308ac-c235-4ec4-b52b-b064b83cd9b4",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "hspd",
-            "varType": 1
-        },
-        {
-            "id": "a4e0d50e-ce21-4502-91f9-887a4da069a5",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "vspd",
             "varType": 1
         },
         {
