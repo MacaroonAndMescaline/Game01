@@ -10,7 +10,8 @@
         "92809f30-e820-4f59-9453-80b43735698d",
         "5e29ab15-667e-42b7-824a-ba73f3d831d0",
         "35750506-5f45-43eb-a1e8-165bd4042170",
-        "90d8289a-a2b1-4b64-9670-f677ec8abe8d"
+        "90d8289a-a2b1-4b64-9670-f677ec8abe8d",
+        "bf109a87-18e3-4ffd-b08f-3021be864a7d"
     ],
     "filterType": "GMSprite",
     "folderName": "environment group",

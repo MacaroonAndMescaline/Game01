@@ -23,12 +23,33 @@ if(keyboard_check(global.CONTROL_LEFT)
 //-----------------------------------------------------------------------------
 //gravity======================================================================
 //-----------------------------------------------------------------------------
-srpt_gravity_collisions_no_physics()
 
-//-----------------------------------------------
-//Pausing game to show start menu----------------
-//-----------------------------------------------
+if !place_meeting(x,y,obj_ladder_no_physics) {
+	srpt_gravity_collisions_no_physics()
+}
+else {
+	if keyboard_check(global.CONTROL_UP)
+	|| keyboard_check(global.ALT_CONTROL_UP)
+	|| (gamepad_axis_value(0,global.GP_VERTICAL_MOVE) > 0) {
+		if place_meeting(x,y - obj_speed, obj_ground_parent)
+		|| !place_meeting(x,y - obj_speed, obj_ladder_no_physics)
+			vspd = 0
+		else vspd = -obj_speed
+	}
+	else if keyboard_check(global.CONTROL_DOWN)
+	|| keyboard_check(global.ALT_CONTROL_DOWN)
+	|| (gamepad_axis_value(0,global.GP_VERTICAL_MOVE) < 0) {
+		if place_meeting(x,y + obj_speed, obj_ground_parent)
+			vspd = 0
+		else vspd = obj_speed
+	}
+	else vspd = 0
+	y += vspd
+}
+
+//-----------------------------------------------------------------------------
+//Pausing game to show start menu==============================================
+//-----------------------------------------------------------------------------
 if(keyboard_check_pressed(global.ESCAPE)) || gamepad_button_check_pressed(0,global.GP_ESCAPE) { 
-	//room_goto(rm_splash);
 	instance_create_layer(x,y,"MenuLayer",obj_pause);
 }
