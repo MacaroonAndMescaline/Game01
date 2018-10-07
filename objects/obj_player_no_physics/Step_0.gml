@@ -1,5 +1,4 @@
 /// @description Movement
-
 //-----------------------------------------------------------------------------
 //moving left and right========================================================
 //-----------------------------------------------------------------------------
@@ -18,19 +17,19 @@ if(keyboard_check(global.CONTROL_LEFT)
 		srpt_movement_non_physics();
 	}
 	else xadd = 0; 
-
-
 //-----------------------------------------------------------------------------
 //gravity======================================================================
 //-----------------------------------------------------------------------------
-
 if !place_meeting(x,y,obj_ladder_no_physics) {
 	srpt_gravity_collisions_no_physics()
 }
+//-----------------------------------------------------------------------------
+//ladder climbing==============================================================
+//-----------------------------------------------------------------------------
 else {
 	if keyboard_check(global.CONTROL_UP)
 	|| keyboard_check(global.ALT_CONTROL_UP)
-	|| (gamepad_axis_value(0,global.GP_VERTICAL_MOVE) > 0) {
+	|| (gamepad_axis_value(0,global.GP_VERTICAL_MOVE) < 0) {
 		if place_meeting(x,y - obj_speed, obj_ground_parent)
 		|| !place_meeting(x,y - obj_speed, obj_ladder_no_physics)
 			vspd = 0
@@ -38,7 +37,7 @@ else {
 	}
 	else if keyboard_check(global.CONTROL_DOWN)
 	|| keyboard_check(global.ALT_CONTROL_DOWN)
-	|| (gamepad_axis_value(0,global.GP_VERTICAL_MOVE) < 0) {
+	|| (gamepad_axis_value(0,global.GP_VERTICAL_MOVE) > 0) {
 		if place_meeting(x,y + obj_speed, obj_ground_parent)
 			vspd = 0
 		else vspd = obj_speed
@@ -46,10 +45,17 @@ else {
 	else vspd = 0
 	y += vspd
 }
-
+//-----------------------------------------------------------------------------
+//action button for picking up objects=========================================
+//-----------------------------------------------------------------------------
+if(keyboard_check_pressed(global.ACTION) 
+|| gamepad_button_check_pressed(0,global.GP_ACTION)) {
+		event_user(0);
+}
 //-----------------------------------------------------------------------------
 //Pausing game to show start menu==============================================
 //-----------------------------------------------------------------------------
-if(keyboard_check_pressed(global.ESCAPE)) || gamepad_button_check_pressed(0,global.GP_ESCAPE) { 
+if keyboard_check_pressed(global.ESCAPE) 
+|| gamepad_button_check_pressed(0,global.GP_ESCAPE) { 
 	instance_create_layer(x,y,"MenuLayer",obj_pause);
 }

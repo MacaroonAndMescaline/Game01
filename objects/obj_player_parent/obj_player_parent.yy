@@ -121,6 +121,34 @@
             "value": "0",
             "varName": "grounded",
             "varType": 3
+        },
+        {
+            "id": "2eedc4aa-dc32-4359-8618-c62b0e789a29",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "15",
+            "varName": "obj_width",
+            "varType": 1
+        },
+        {
+            "id": "f20078e0-4466-4c16-895e-30d35b1626a0",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "30",
+            "varName": "obj_height",
+            "varType": 1
         }
     ],
     "solid": false,
