@@ -149,6 +149,20 @@
             "value": "30",
             "varName": "obj_height",
             "varType": 1
+        },
+        {
+            "id": "63e63f12-7655-4f58-b40b-2797cb66ae5d",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "5",
+            "varName": "base_speed",
+            "varType": 1
         }
     ],
     "solid": false,

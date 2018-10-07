@@ -55,6 +55,10 @@ audio_group_set_gain(ag_SoundFX, global.SOUNDFX_VOLUME, 0);
 audio_master_gain(global.MASTER_VOLUME);
 ini_close();
 
+//for game settings misc
+ini_open("settings/misc.ini")
+global.GAME_SPEED = ini_read_real("misc","gamespeed",0)
+ini_close()
 //for changing gamepad controls
 global.GP_BUTTONS = [gp_face1,gp_face2,gp_face3,gp_face4,gp_shoulderl,gp_shoulderlb,
                      gp_shoulderr,gp_shoulderrb,gp_select,gp_start,gp_padu,gp_padd,

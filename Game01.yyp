@@ -319,6 +319,14 @@
             }
         },
         {
+            "Key": "47c56f3b-24a2-4a28-803a-694c72a73232",
+            "Value": {
+                "id": "515c7f67-d3b3-4878-a830-854c1bd3bdf6",
+                "resourcePath": "scripts\\srpt_change_game_speed\\srpt_change_game_speed.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4877da9a-3842-4f81-88eb-87ecea4b1053",
             "Value": {
                 "id": "23861ca5-e3c1-4ba8-bed3-91e848f4ec1a",
@@ -695,6 +703,14 @@
             }
         },
         {
+            "Key": "a6adb669-2e96-4bba-9b72-6059fb71d5df",
+            "Value": {
+                "id": "6bdb803d-2b3c-44d1-baf8-da96dee1b49a",
+                "resourcePath": "views\\a6adb669-2e96-4bba-9b72-6059fb71d5df.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "a7297bdf-9f99-40c9-afef-2dff98014b22",
@@ -1029,6 +1045,7 @@
         "3530dc90-e5ab-4941-a6fe-1e2a35cebf9c",
         "80d674f3-bd52-4440-bb21-11f4b7ea06e2",
         "4a7b0b64-7610-412b-986b-49c791eecd3a",
+        "47c56f3b-24a2-4a28-803a-694c72a73232",
         "32d2fd98-941d-4c7f-bc40-30447cc418f6",
         "1326bf5c-5b78-453e-b3bb-135d1e2acfa6",
         "9fd2ee83-d3ec-47e9-b200-d67193b5df48",

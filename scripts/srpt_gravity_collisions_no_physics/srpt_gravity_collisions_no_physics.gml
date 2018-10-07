@@ -1,7 +1,7 @@
 //REQUIRED
 //vspd
 //grounded
-
+if(vspd < 10) vspd += grav
 distance_to_slope = 10
 //-----------------------------------------------------------------------------
 //vertical collisions for gravity purposes=====================================
