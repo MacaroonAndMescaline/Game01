@@ -18,6 +18,27 @@ if(keyboard_check(global.CONTROL_LEFT)
 	}
 	else xadd = 0; 
 //-----------------------------------------------------------------------------
+//action button for picking up objects=========================================
+//-----------------------------------------------------------------------------
+if keyboard_check_pressed(global.ACTION) 
+|| gamepad_button_check_pressed(0,global.GP_ACTION) {
+		event_user(0);
+}
+//-----------------------------------------------------------------------------
+//Climbing shit================================================================
+//-----------------------------------------------------------------------------
+if keyboard_check_pressed(global.CLIMB) 
+|| gamepad_button_check_pressed(0,global.GP_CLIMB) {
+	event_user(1)
+}
+//-----------------------------------------------------------------------------
+//Pausing game to show start menu==============================================
+//-----------------------------------------------------------------------------
+if keyboard_check_pressed(global.ESCAPE) 
+|| gamepad_button_check_pressed(0,global.GP_ESCAPE) { 
+	instance_create_layer(x,y,"MenuLayer",obj_pause);
+}
+//-----------------------------------------------------------------------------
 //gravity======================================================================
 //-----------------------------------------------------------------------------
 if !place_meeting(x,y,obj_ladder_no_physics) {
@@ -44,18 +65,4 @@ else {
 	}
 	else vspd = 0
 	y += vspd
-}
-//-----------------------------------------------------------------------------
-//action button for picking up objects=========================================
-//-----------------------------------------------------------------------------
-if(keyboard_check_pressed(global.ACTION) 
-|| gamepad_button_check_pressed(0,global.GP_ACTION)) {
-		event_user(0);
-}
-//-----------------------------------------------------------------------------
-//Pausing game to show start menu==============================================
-//-----------------------------------------------------------------------------
-if keyboard_check_pressed(global.ESCAPE) 
-|| gamepad_button_check_pressed(0,global.GP_ESCAPE) { 
-	instance_create_layer(x,y,"MenuLayer",obj_pause);
 }
