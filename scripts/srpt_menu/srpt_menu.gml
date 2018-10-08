@@ -68,6 +68,8 @@ else if(whichMenu = "Options") {
 		case 6: //soundfx volume
 			srpt_change_volume("soundfx", barMove);
 			break;
+		case 7: //gamespeed
+			srpt_change_game_speed(barMove)
 		default:
 			break;
 	}

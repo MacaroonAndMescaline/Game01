@@ -231,6 +231,14 @@
             }
         },
         {
+            "Key": "2efb0d11-9612-4701-980f-103903085559",
+            "Value": {
+                "id": "e298518e-e15d-4fc1-8c06-d7cd3bb4b4c0",
+                "resourcePath": "objects\\obj_ladder_no_physics\\obj_ladder_no_physics.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2f490200-a18f-4d7d-9440-e7361223a3cc",
             "Value": {
                 "id": "98b87665-3bc8-4166-8f74-414f8d982489",
@@ -327,6 +335,14 @@
             }
         },
         {
+            "Key": "47c56f3b-24a2-4a28-803a-694c72a73232",
+            "Value": {
+                "id": "515c7f67-d3b3-4878-a830-854c1bd3bdf6",
+                "resourcePath": "scripts\\srpt_change_game_speed\\srpt_change_game_speed.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4877da9a-3842-4f81-88eb-87ecea4b1053",
             "Value": {
                 "id": "23861ca5-e3c1-4ba8-bed3-91e848f4ec1a",
@@ -367,11 +383,19 @@
             }
         },
         {
+<<<<<<< HEAD
             "Key": "5927c6a2-f651-4dab-99d3-43c6134f389e",
             "Value": {
                 "id": "9f054d90-8de2-4a25-9fd5-43767be87abb",
                 "resourcePath": "rooms\\rm_level_Sewer_Entry\\rm_level_Sewer_Entry.yy",
                 "resourceType": "GMRoom"
+=======
+            "Key": "55f9eecb-8ba5-4fa8-9ec2-70f0daa58d09",
+            "Value": {
+                "id": "fed5e510-3c0a-4d96-b66e-ff1c0b316da6",
+                "resourcePath": "objects\\obj_player_no_physics\\obj_player_no_physics.yy",
+                "resourceType": "GMObject"
+>>>>>>> master
             }
         },
         {
@@ -420,6 +444,14 @@
                 "id": "b2464bba-496a-4c80-8e5f-397fca4b7d12",
                 "resourcePath": "objects\\obj_ground_sortof\\obj_ground_sortof.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "6581b719-71c3-47d1-a650-f3e6552a0325",
+            "Value": {
+                "id": "eda5d082-74a1-4e90-99e8-9860f0842bfe",
+                "resourcePath": "scripts\\srpt_gravity_collisions_no_physics\\srpt_gravity_collisions_no_physics.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -655,6 +687,14 @@
             }
         },
         {
+            "Key": "9fd2ee83-d3ec-47e9-b200-d67193b5df48",
+            "Value": {
+                "id": "a867392a-3648-4d94-a9f9-b1f107af731b",
+                "resourcePath": "scripts\\srpt_movement_non_physics\\srpt_movement_non_physics.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a0334872-d02c-4320-8ff5-bfda7f4f4d00",
             "Value": {
                 "id": "5c1b084d-e63c-4bea-8cfd-7c2e54fca97a",
@@ -699,6 +739,14 @@
             "Value": {
                 "id": "3dff2cb6-e123-45d6-86b8-86bc6badcc9a",
                 "resourcePath": "views\\a6a43f42-4310-40e2-b947-eef3679cf928.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a6adb669-2e96-4bba-9b72-6059fb71d5df",
+            "Value": {
+                "id": "6bdb803d-2b3c-44d1-baf8-da96dee1b49a",
+                "resourcePath": "views\\a6adb669-2e96-4bba-9b72-6059fb71d5df.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -759,6 +807,14 @@
             }
         },
         {
+            "Key": "bf109a87-18e3-4ffd-b08f-3021be864a7d",
+            "Value": {
+                "id": "f402100b-8d97-4a46-989d-882730d55072",
+                "resourcePath": "sprites\\spr_ladder_no_physics\\spr_ladder_no_physics.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c090f483-3f7f-4227-b076-247a743828a3",
             "Value": {
                 "id": "dc4b9d5e-3e3e-4546-9757-a03e9fe5d996",
@@ -772,6 +828,14 @@
                 "id": "b3f9b1c2-3d4e-4999-94b9-f842500f4b1d",
                 "resourcePath": "sprites\\spr_cube\\spr_cube.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "cb1f8753-0e69-4f08-b653-eb4577caad83",
+            "Value": {
+                "id": "4d235411-3965-4bd8-ab85-d44f5163b0ec",
+                "resourcePath": "rooms\\rm_non_physics\\rm_non_physics.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -1037,8 +1101,11 @@
         "3530dc90-e5ab-4941-a6fe-1e2a35cebf9c",
         "80d674f3-bd52-4440-bb21-11f4b7ea06e2",
         "4a7b0b64-7610-412b-986b-49c791eecd3a",
+        "47c56f3b-24a2-4a28-803a-694c72a73232",
         "32d2fd98-941d-4c7f-bc40-30447cc418f6",
-        "1326bf5c-5b78-453e-b3bb-135d1e2acfa6"
+        "1326bf5c-5b78-453e-b3bb-135d1e2acfa6",
+        "9fd2ee83-d3ec-47e9-b200-d67193b5df48",
+        "6581b719-71c3-47d1-a650-f3e6552a0325"
     ],
     "tutorial": ""
 }
