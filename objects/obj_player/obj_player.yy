@@ -184,20 +184,6 @@
             "varType": 3
         },
         {
-            "id": "efd824c5-3ab2-45d4-a5e2-d1d3f1f6602b",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "30",
-            "varName": "throw_speed",
-            "varType": 1
-        },
-        {
             "id": "1fb99071-f4b3-432a-a665-31f0d829ed1f",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",

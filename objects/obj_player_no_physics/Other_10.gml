@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Picking up/throwing object
 // You can write your code in this editor
 
 //-----------------------------------------------------------------------
@@ -6,12 +6,12 @@
 //-----------------------------------------------------------------------
 if(picked_up_item) && (alarm[0] <0){
 	if(obj_direction_right)
-		with(instance_create_layer(x + hspd + 1 + obj_player.obj_width, y , "Ground", held_object)){
-			physics_apply_force(x, y, obj_player.throw_speed, - obj_player.throw_speed/1.5);
+		with(instance_create_layer(x + hspd + 1 + obj_player_no_physics.obj_width, y , "Ground", held_object)){
+			physics_apply_force(x, y, obj_player_no_physics.throw_speed, - obj_player_no_physics.throw_speed/1.5);
 		}
 	else
 		with(instance_create_layer(x + hspd - held_width - 1, y, "Ground", held_object)){
-			physics_apply_force(x, y, - obj_player.throw_speed, - obj_player.throw_speed/1.5);
+			physics_apply_force(x, y, - obj_player_no_physics.throw_speed, - obj_player_no_physics.throw_speed/1.5);
 		}
 	picked_up_item = false;
 	alarm[0] = 5;

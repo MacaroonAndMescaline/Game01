@@ -163,6 +163,20 @@
             "value": "5",
             "varName": "base_speed",
             "varType": 1
+        },
+        {
+            "id": "dc542cb2-0d4a-486b-be11-68528f9cc95f",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "30",
+            "varName": "throw_speed",
+            "varType": 1
         }
     ],
     "solid": false,
