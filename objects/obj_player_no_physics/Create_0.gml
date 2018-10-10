@@ -30,3 +30,4 @@ picked_up_item = false;
 //What speed to move at========================================================
 //-----------------------------------------------------------------------------
 obj_speed = base_speed + (base_speed * global.GAME_SPEED)
+climb_speed = base_climb_speed + (base_climb_speed *global.GAME_SPEED)

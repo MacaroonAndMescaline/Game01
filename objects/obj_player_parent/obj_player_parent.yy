@@ -177,6 +177,34 @@
             "value": "30",
             "varName": "throw_speed",
             "varType": 1
+        },
+        {
+            "id": "fd7f69e1-39ab-4c49-bcf5-4c288ea2bee4",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "5",
+            "varName": "climb_speed",
+            "varType": 1
+        },
+        {
+            "id": "9ebd3f1f-7da7-43d2-ae07-764a8f530559",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "5",
+            "varName": "base_climb_speed",
+            "varType": 1
         }
     ],
     "solid": false,

@@ -54,14 +54,14 @@ else {
 		if place_meeting(x,y - obj_speed, obj_ground_parent)
 		|| !place_meeting(x,y - obj_speed, obj_ladder_no_physics)
 			vspd = 0
-		else vspd = -obj_speed
+		else vspd = -climb_speed
 	}
 	else if keyboard_check(global.CONTROL_DOWN)
 	|| keyboard_check(global.ALT_CONTROL_DOWN)
 	|| (gamepad_axis_value(0,global.GP_VERTICAL_MOVE) > 0) {
 		if place_meeting(x,y + obj_speed, obj_ground_parent)
 			vspd = 0
-		else vspd = obj_speed
+		else vspd = climb_speed
 	}
 	else vspd = 0
 	y += vspd
