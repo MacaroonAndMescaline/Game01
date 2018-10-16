@@ -1,5 +1,10 @@
-//argument0 = menu object being created
-//argument1 = menu object that is creating a new menu object
+//calling this script----------------------------------------------------------
+//srpt_create_menu(goingTo,comingFrom);
+//-----------------------------------------------------------------------------
+//goingTo ----> argument0 = menu object being created
+//comingFrom -> argument1 = menu object that is creating a new menu object
+
+
 loaded = false
 var goingTo = argument0
 var comingFrom = argument1

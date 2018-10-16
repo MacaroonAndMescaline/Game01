@@ -1,3 +1,5 @@
+//This gets called when a menu object wants to return to previous menu
+
 loaded = false;
 var whereToGo = ds_stack_top(return_to)
 ds_stack_pop(return_to)
