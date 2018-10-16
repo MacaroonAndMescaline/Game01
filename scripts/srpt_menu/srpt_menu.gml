@@ -13,25 +13,12 @@ delay = 1;
 if(whichMenu = "Main") {
 	switch(mpos) {
 		case 0: //Start
-			loaded = false;
-			with instance_create_layer(x,y,"MenuLayer",obj_betaRooms) {
-			if ds_stack_size(other.return_to) > 0
-					ds_stack_copy(return_to, other.return_to)
-				ds_stack_push(return_to,obj_mainMenu)
-			}
-			instance_destroy();
+			srpt_create_menu(obj_betaRooms, obj_mainMenu);
 			break;
 		case 1: //Load
 			break;
 		case 2: //whichMenu = "Options";
-			loaded = false;
-			with(instance_create_layer(x,y,"MenuLayer",obj_options)) {
-				if ds_stack_size(other.return_to) > 0
-					ds_stack_copy(return_to, other.return_to)
-				ds_stack_push(return_to,obj_mainMenu)
-			}
-			instance_destroy();
-			mpos = 0;
+			srpt_create_menu(obj_options, obj_mainMenu)
 			break;
 		case 3:
 			game_end();
@@ -46,34 +33,15 @@ else if(whichMenu = "Options") {
 	switch(mpos) {
 		case 0:
 			//whichMenu = "Main";
-			loaded = false;
-			whereToGo = ds_stack_top(return_to)
-			ds_stack_pop(return_to)
-			with instance_create_layer(x,y,"MenuLayer", whereToGo) {
-				if ds_stack_size(other.return_to) > 0
-					ds_stack_copy(return_to, other.return_to)
-			}
-			instance_destroy();
+			srpt_return_to_previous();
 			break;
 		case 1:
 			//whichMenu = "Controls";
-			loaded = false;
-			with instance_create_layer(x,y,"MenuLayer",obj_controls){
-				if ds_stack_size(other.return_to) > 0
-					ds_stack_copy(return_to, other.return_to)
-				ds_stack_push(return_to,obj_options)
-			}
-			instance_destroy();
+			srpt_create_menu(obj_controls, obj_options)
 			break;
 		case 2:
 			//whichMenu = "Resolution";
-			loaded = false;
-			with instance_create_layer(x,y,"MenuLayer",obj_resolution){
-				if ds_stack_size(other.return_to) > 0
-					ds_stack_copy(return_to, other.return_to)
-				ds_stack_push(return_to,obj_options)
-			}
-			instance_destroy();
+			srpt_create_menu(obj_resolution, obj_options)
 			break;
 		case 3: //full screen
 			srpt_toggle_fullscreen();
@@ -98,15 +66,7 @@ else if(whichMenu = "Options") {
 else if(whichMenu == "Beta") {
 	switch(mpos) {
 		case 0: //-back- 
-		//whichMenu = "Main";
-			loaded = false;
-			whereToGo = ds_stack_top(return_to)
-			ds_stack_pop(return_to)
-			with instance_create_layer(x,y,"MenuLayer", whereToGo) {
-				if ds_stack_size(other.return_to) > 0
-					ds_stack_copy(return_to, other.return_to)
-			}
-			instance_destroy();
+			srpt_return_to_previous();
 			break;
 		case 1:
 			room_goto(rm_beta_slopes);
@@ -131,23 +91,10 @@ else if(whichMenu == "Controls") {
 	switch(mpos){
 		case 0:
 			//whichMenu = "Options";
-			loaded = false;
-			whereToGo = ds_stack_top(return_to)
-			ds_stack_pop(return_to)
-			with instance_create_layer(x,y,"MenuLayer", whereToGo) {
-				if ds_stack_size(other.return_to) > 0
-					ds_stack_copy(return_to, other.return_to)
-			}
-			instance_destroy();
+			srpt_return_to_previous();
 			break;
-		case 1:
-			loaded = false;
-			with instance_create_layer(x,y,"MenuLayer",obj_gamepad){
-				if ds_stack_size(other.return_to) > 0
-					ds_stack_copy(return_to, other.return_to)
-				ds_stack_push(return_to,obj_controls)
-			}
-			instance_destroy();
+		case 1: //game pad controls
+			srpt_create_menu(obj_gamepad, obj_controls);
 			break;
 		case 2:
 			alarm[0] = delay;
@@ -221,14 +168,7 @@ else if(whichMenu == "Resolution") {
 	switch(mpos) {
 		case 0:
 			//whichMenu = "Options";
-			loaded = false;
-			whereToGo = ds_stack_top(return_to)
-			ds_stack_pop(return_to)
-			with instance_create_layer(x,y,"MenuLayer", whereToGo) {
-				if ds_stack_size(other.return_to) > 0
-					ds_stack_copy(return_to, other.return_to)
-			}
-			instance_destroy();
+			srpt_return_to_previous();
 			break;
 		case 1:
 			srpt_change_res(1280, 720);
@@ -251,13 +191,7 @@ else if(whichMenu == "Pause") {
 			instance_destroy();
 			break;
 		case 1: //options
-			loaded = false;
-			with instance_create_layer(x,y,"MenuLayer",obj_options) {
-			if ds_stack_size(other.return_to) > 0
-					ds_stack_copy(return_to, other.return_to)
-				ds_stack_push(return_to,obj_pause)
-			}
-			instance_destroy();
+			srpt_create_menu(obj_options, obj_pause)
 			break;
 		case 2: //quit to main menu
 			loaded = false;
@@ -285,14 +219,7 @@ else if(whichMenu == "Pause") {
 else if(whichMenu == "Gamepad") && (alarm[0] < 0) {
 	switch(mpos) {
 		case 0:
-			loaded = false;
-			whereToGo = ds_stack_top(return_to)
-			ds_stack_pop(return_to)
-			with instance_create_layer(x,y,"MenuLayer", whereToGo) {
-				if ds_stack_size(other.return_to) > 0
-					ds_stack_copy(return_to, other.return_to)
-			}
-			instance_destroy();
+			srpt_return_to_previous();
 			break;
 		case 1:
 			alarm[0] = delay;
