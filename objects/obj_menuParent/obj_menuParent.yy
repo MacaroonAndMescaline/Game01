@@ -135,6 +135,20 @@
             "value": "0",
             "varName": "gamePause",
             "varType": 3
+        },
+        {
+            "id": "299341b0-0693-4d99-8212-8d1418d4ace2",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "ds_stack_create()",
+            "varName": "return_to",
+            "varType": 4
         }
     ],
     "solid": false,
