@@ -14,15 +14,22 @@ if(whichMenu = "Main") {
 	switch(mpos) {
 		case 0: //Start
 			loaded = false;
-			instance_create_layer(x,y,"MenuLayer",obj_betaRooms);
+			with instance_create_layer(x,y,"MenuLayer",obj_betaRooms) {
+			if ds_stack_size(other.return_to) > 0
+					ds_stack_copy(return_to, other.return_to)
+				ds_stack_push(return_to,obj_mainMenu)
+			}
 			instance_destroy();
 			break;
 		case 1: //Load
 			break;
-		case 2:
-			//whichMenu = "Options";
+		case 2: //whichMenu = "Options";
 			loaded = false;
-			instance_create_layer(x,y,"MenuLayer",obj_options);
+			with(instance_create_layer(x,y,"MenuLayer",obj_options)) {
+				if ds_stack_size(other.return_to) > 0
+					ds_stack_copy(return_to, other.return_to)
+				ds_stack_push(return_to,obj_mainMenu)
+			}
 			instance_destroy();
 			mpos = 0;
 			break;
@@ -40,23 +47,35 @@ else if(whichMenu = "Options") {
 		case 0:
 			//whichMenu = "Main";
 			loaded = false;
+			whereToGo = ds_stack_top(return_to)
+			ds_stack_pop(return_to)
+			with instance_create_layer(x,y,"MenuLayer", whereToGo) {
+				if ds_stack_size(other.return_to) > 0
+					ds_stack_copy(return_to, other.return_to)
+			}
 			instance_destroy();
-			instance_create_layer(x,y,"MenuLayer",global.RETURNMENU);
-			//instance_destroy();
 			break;
 		case 1:
 			//whichMenu = "Controls";
 			loaded = false;
-			instance_create_layer(x,y,"MenuLayer",obj_controls);
+			with instance_create_layer(x,y,"MenuLayer",obj_controls){
+				if ds_stack_size(other.return_to) > 0
+					ds_stack_copy(return_to, other.return_to)
+				ds_stack_push(return_to,obj_options)
+			}
 			instance_destroy();
 			break;
 		case 2:
 			//whichMenu = "Resolution";
 			loaded = false;
-			instance_create_layer(x,y,"MenuLayer",obj_resolution);
+			with instance_create_layer(x,y,"MenuLayer",obj_resolution){
+				if ds_stack_size(other.return_to) > 0
+					ds_stack_copy(return_to, other.return_to)
+				ds_stack_push(return_to,obj_options)
+			}
 			instance_destroy();
 			break;
-		case 3:
+		case 3: //full screen
 			srpt_toggle_fullscreen();
 			break;
 		case 4: //master volume
@@ -78,10 +97,15 @@ else if(whichMenu = "Options") {
 //beta level selection---------------------------
 else if(whichMenu == "Beta") {
 	switch(mpos) {
-		case 0:
-			//whichMenu = "Main";
+		case 0: //-back- 
+		//whichMenu = "Main";
 			loaded = false;
-			instance_create_layer(x,y,"MenuLayer",global.RETURNMENU);
+			whereToGo = ds_stack_top(return_to)
+			ds_stack_pop(return_to)
+			with instance_create_layer(x,y,"MenuLayer", whereToGo) {
+				if ds_stack_size(other.return_to) > 0
+					ds_stack_copy(return_to, other.return_to)
+			}
 			instance_destroy();
 			break;
 		case 1:
@@ -108,12 +132,21 @@ else if(whichMenu == "Controls") {
 		case 0:
 			//whichMenu = "Options";
 			loaded = false;
-			instance_create_layer(x,y,"MenuLayer",obj_options);
+			whereToGo = ds_stack_top(return_to)
+			ds_stack_pop(return_to)
+			with instance_create_layer(x,y,"MenuLayer", whereToGo) {
+				if ds_stack_size(other.return_to) > 0
+					ds_stack_copy(return_to, other.return_to)
+			}
 			instance_destroy();
 			break;
 		case 1:
 			loaded = false;
-			instance_create_layer(x,y,"MenuLayer",obj_gamepad);
+			with instance_create_layer(x,y,"MenuLayer",obj_gamepad){
+				if ds_stack_size(other.return_to) > 0
+					ds_stack_copy(return_to, other.return_to)
+				ds_stack_push(return_to,obj_controls)
+			}
 			instance_destroy();
 			break;
 		case 2:
@@ -189,7 +222,12 @@ else if(whichMenu == "Resolution") {
 		case 0:
 			//whichMenu = "Options";
 			loaded = false;
-			instance_create_layer(x,y,"MenuLayer",obj_options);
+			whereToGo = ds_stack_top(return_to)
+			ds_stack_pop(return_to)
+			with instance_create_layer(x,y,"MenuLayer", whereToGo) {
+				if ds_stack_size(other.return_to) > 0
+					ds_stack_copy(return_to, other.return_to)
+			}
 			instance_destroy();
 			break;
 		case 1:
@@ -212,23 +250,27 @@ else if(whichMenu == "Pause") {
 			physics_pause_enable(false);
 			instance_destroy();
 			break;
-		case 1:
+		case 1: //options
 			loaded = false;
-			instance_create_layer(x,y,"MenuLayer",obj_options);
+			with instance_create_layer(x,y,"MenuLayer",obj_options) {
+			if ds_stack_size(other.return_to) > 0
+					ds_stack_copy(return_to, other.return_to)
+				ds_stack_push(return_to,obj_pause)
+			}
 			instance_destroy();
 			break;
-		case 2:
+		case 2: //quit to main menu
 			loaded = false;
 			instance_activate_all();
 			physics_pause_enable(false);
 			instance_destroy();
 			room_goto(rm_splash);
 			break;
-		case 3:
+		case 3: //goto previous room
 			if(room_exists(room_previous(room)))
 				room_goto_previous();
 			break;
-		case 4:
+		case 4: //goto next room
 			if room_exists(room_next(room)) 
 				room_goto_next();
 			break;
@@ -244,7 +286,12 @@ else if(whichMenu == "Gamepad") && (alarm[0] < 0) {
 	switch(mpos) {
 		case 0:
 			loaded = false;
-			instance_create_layer(x,y,"MenuLayer",obj_controls);
+			whereToGo = ds_stack_top(return_to)
+			ds_stack_pop(return_to)
+			with instance_create_layer(x,y,"MenuLayer", whereToGo) {
+				if ds_stack_size(other.return_to) > 0
+					ds_stack_copy(return_to, other.return_to)
+			}
 			instance_destroy();
 			break;
 		case 1:

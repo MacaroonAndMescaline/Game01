@@ -3,7 +3,6 @@
 menu = ["Resume","Options","Quit to Main Menu","Go Previous Room" ,"Go Next Room"];
 loaded = true;
 whichMenu = "Pause";
-global.RETURNMENU = obj_pause;
 instance_deactivate_all(true);
 //if(!global.PAUSE) { 
 //	srpt_change_physics();
