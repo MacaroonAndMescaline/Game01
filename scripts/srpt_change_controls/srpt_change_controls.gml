@@ -1,3 +1,4 @@
+//This is for changing controls
 //variables for swapping keys
 swap = false;
 

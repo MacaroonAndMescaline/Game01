@@ -1,3 +1,8 @@
+//changes the volume of everything
+//This is called by srpt_menu when in options of menu
+
+
+
 volume = argument0;
 dir = argument1;
 
