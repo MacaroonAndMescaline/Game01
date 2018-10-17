@@ -1,4 +1,4 @@
-//Author: JOHN THOLEN 
+//Author: JOHN THOLEN
 //This changes the global variables associated for the actual controls the game looks for in the code.
 //called by srpt_change_controls
 //changes controls for game
