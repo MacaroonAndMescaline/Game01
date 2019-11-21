@@ -1,0 +1,1 @@
+return window_get_height()/720
