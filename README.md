@@ -12,13 +12,15 @@
 * a single npc  
   
   
-## Future Features Coming soon ##  
-* random room generation  
-* UI for items & gear  
-* items  
+## Future Features (Coming soon in order of importance) ##  
+* UI for items & gear & map & skills  
+* items & gear  
 * skill tree  
-* events between each randomly generated room
+* random room generation  
+* events between each randomly generated room  
   
+# Changes happening to existing systems #  
+* textboxes  
   
 ## End Goal ##  
 A complete single player experience.
