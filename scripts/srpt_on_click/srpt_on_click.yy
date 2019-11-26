@@ -1,8 +1,8 @@
 {
-    "id": "a70010b0-9c67-41f4-8e29-1f30ecf5b275",
+    "id": "54cd6a8b-795a-43bf-8a76-8045dbc844ac",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "srpt_draw_9sclice",
+    "name": "srpt_on_click",
     "IsCompatibility": false,
     "IsDnD": false
 }

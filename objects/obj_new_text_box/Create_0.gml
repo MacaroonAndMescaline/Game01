@@ -24,4 +24,5 @@ x = 0;
 y = lguiH - height;
 
 //other nonsense
-padding = 8;
+padding = 10;
+drawArrow = false;

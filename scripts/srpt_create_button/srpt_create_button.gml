@@ -12,7 +12,7 @@ var lHeight = argument[3];
 var lText = argument[4];
 var lScript = argument[5];
 
-var lButton = instance_create_layer(lX,lY,"Instances", obj_GUI);
+var lButton = instance_create_layer(lX,lY,"Instances", obj_GUI_button);
 with(lButton) {
 	width = lWidth;
 	height = lHeight;

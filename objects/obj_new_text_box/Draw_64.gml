@@ -3,11 +3,14 @@
 var larr = messages[| messageID];
 var lname = larr[MSG.NAME];
 var limage = larr[MSG.IMAGE];
+//get gui dimensions for arrow
+var lguiW = display_get_gui_width();
+var lguiH = display_get_gui_height();
 
 draw_set_font(fnt_main_menu);
 
 //draw textbox
-srpt_draw_9sclice(x,y,width,height,spr_textbox,0);
+srpt_draw_9slice(x,y,width,height,spr_textbox,0);
 
 //draw position
 var ldrawX = x + padding;
@@ -31,3 +34,8 @@ var lmaxW = width - (ldrawX + padding);
 //draw text
 draw_text_ext(ldrawX,ldrawY,messageText, -1,lmaxW);
 draw_set_color(c_white);
+
+//draw finished arrow if text is done
+if(drawArrow) {
+	draw_sprite(spr_new_arrow,0,lguiW - padding,lguiH - padding)
+}
