@@ -8,13 +8,11 @@ if(loaded) {
 	draw_set_font(fnt_main_menu);
 
 
-	var cx = camera_get_view_x(view_camera[0]);
-	var cy = camera_get_view_y(view_camera[0]);
-	var cw = camera_get_view_width(view_camera[0]);
-	var ch = camera_get_view_height(view_camera[0]);
+	var cw = display_get_gui_width();
+	var ch = display_get_gui_height();
 
-	x = cx + cw /2;
-	y = cy + ch /2 - space * 2;
+	x = cw /2;
+	y = ch /2 - space * 2;
 	draw_set_color(c_white);
 //-----------------------------------------------------------------------------------------
 //New optimized code

@@ -21,8 +21,10 @@ if(sprite_exists(limage)) {
 	var limageW = sprite_get_width(limage);
 	var limageH = sprite_get_height(limage);
 	
-	draw_sprite(limage, 0, ldrawX + limageW/2, ldrawY + limageH/2)
-	ldrawX += limageW + padding;
+	//draw_sprite(limage, 0, ldrawX + limageW/2, ldrawY + limageH/2)
+	//draw_sprite_ext(limage, 0, ldrawX, ldrawY,srpt_xscale(),srpt_yscale(),0,c_white,1)
+	draw_sprite_stretched(limage,0,ldrawX,ldrawY, limageW + lguiH-padding-ldrawY,lguiH -padding - ldrawY)
+	ldrawX += limageW +lguiH - ldrawY+ padding;
 }
 //text color
 draw_set_color(c_black);
@@ -37,5 +39,7 @@ draw_set_color(c_white);
 
 //draw finished arrow if text is done
 if(drawArrow) {
-	draw_sprite(spr_new_arrow,0,lguiW - padding,lguiH - padding)
+	var arrowW = sprite_get_width(spr_new_arrow)
+	var arrowH = sprite_get_height(spr_new_arrow)
+	draw_sprite(spr_new_arrow,0,lguiW - padding - arrowW/2,lguiH - padding - arrowH/2)
 }

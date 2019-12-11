@@ -83,8 +83,8 @@ else if keyboard_check(global.SPEAR)
 //-----------------------------------------------------------------------------
 //Jump=========================================================================
 //-----------------------------------------------------------------------------
-if keyboard_check_pressed(global.JUMP) 
-|| gamepad_button_check_pressed(0,global.GP_JUMP) 
+if (keyboard_check_pressed(global.JUMP) 
+|| gamepad_button_check_pressed(0,global.GP_JUMP)) 
 && (grounded || wall_stuck){
 	grounded = false;
 	vspd = -jump_speed;

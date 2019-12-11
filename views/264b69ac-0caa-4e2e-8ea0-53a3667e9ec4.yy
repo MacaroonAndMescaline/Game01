@@ -12,7 +12,11 @@
         "fb67d63a-86fc-4ca7-8c7c-29943da06981",
         "da520638-a8d6-4813-bdce-9580f8f8bd42",
         "9c8b378a-3977-4296-b5aa-c551de77dcbe",
-        "27831bf1-8b76-4573-a0ec-774576848063"
+        "27831bf1-8b76-4573-a0ec-774576848063",
+        "dae4d729-12e6-4051-a27c-98b112331b4b",
+        "d0a436b8-993d-4ffd-8b6c-9ff3f51ece35",
+        "f4e7673f-c200-46d6-8d89-d03c25efdb1f",
+        "c4b5445e-11fd-464b-8cf8-24eb632480f4"
     ],
     "filterType": "GMObject",
     "folderName": "menu group",

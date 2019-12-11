@@ -39,6 +39,7 @@ global.VIEW_PORT_X = ini_read_real("resolution","x",1280);
 global.VIEW_PORT_Y = ini_read_real("resolution","y",720);
 global.FULLSCREEN = ini_read_real("resolution","fullscreen",0);
 window_set_size(global.VIEW_PORT_X,global.VIEW_PORT_Y);
+display_set_gui_size(global.VIEW_PORT_X,global.VIEW_PORT_Y)
 window_set_fullscreen(global.FULLSCREEN);
 ini_close();
 
@@ -46,7 +47,7 @@ ini_close();
 gamepad_set_axis_deadzone(0,0.15);
 
 //disable cursor on screen
-window_set_cursor(cr_none);
+//window_set_cursor(cr_none);
 
 //figure out audio settings
 ini_open("settings/audio.ini");
