@@ -1135,6 +1135,14 @@
             }
         },
         {
+            "Key": "a4b71dba-22fe-44e1-a6e3-c25dd1ae6c46",
+            "Value": {
+                "id": "0fd3ea65-dd02-4d27-b9a4-6f5b9a5ba7af",
+                "resourcePath": "sounds\\snd_croc\\snd_croc.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "a69b4b28-6f26-4e46-a23c-d153799728a0",
             "Value": {
                 "id": "928f53d7-1bd2-4bfd-b3c6-99dfb9f3d507",

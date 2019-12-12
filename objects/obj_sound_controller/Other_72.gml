@@ -1,7 +1,7 @@
 /// @description Sounds loaded
 // You can write your code in this editor
 if(audio_group_is_loaded(ag_Music)) {
-	audio_play_sound(music_playing,100,true);
+	audio_play_sound(music_playing,100,false);
 	control = true;
 }
 

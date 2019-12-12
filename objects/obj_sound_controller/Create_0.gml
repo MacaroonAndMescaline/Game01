@@ -3,8 +3,8 @@
 audio_group_load(ag_SoundFX);
 audio_group_load(ag_Music);
 
-music_playing = snd_TestMusic;
-music_list = [snd_TestMusic];
+music_playing = snd_croc;
+music_list = [snd_croc];
 sfx = [snd_TestFX];
 
 //music_volume = global.MUSIC;
